@@ -30,6 +30,46 @@ const characters = [
         weapon: "Claymore",
         gender: "Female",
         nation: "Liyue"
+    },
+    {
+        name: "Bennett",
+        rarity: 4,
+        element: "Pyro",
+        weapon: "Sword",
+        gender: "Male",
+        nation: "Mondstadt"
+    },
+    {
+        name: "Chongyun",
+        rarity: 4,
+        element: "Cryo",
+        weapon: "Claymore",
+        gender: "Male",
+        nation: "Liyue"
+    },
+    {
+        name: "Diluc",
+        rarity: 5,
+        element: "Pyro",
+        weapon: "Claymore",
+        gender: "Male",
+        nation: "Mondstadt"
+    },
+    {
+        name: "Diona",
+        rarity: 4,
+        element: "Cryo",
+        weapon: "Bow",
+        gender: "Female",
+        nation: "Mondstadt"
+    },
+    {
+        name: "Fischl",
+        rarity: 4,
+        element: "Electro",
+        weapon: "Bow",
+        gender: "Female",
+        nation: "Mondstadt"
     }
 ]
 

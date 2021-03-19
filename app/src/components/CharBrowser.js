@@ -4,8 +4,8 @@ import CharCard from "./CharCard";
 class CharBrowser extends Component {
     render() {
         return (
-            <div className="ui cards">
-               {this.props.chars.map(char => <CharCard char={char}/>)}
+            <div className="ui centered cards">
+               {this.props.chars.map(char => <CharCard key={char.name} char={char}/>)}
             </div>
         )
     }

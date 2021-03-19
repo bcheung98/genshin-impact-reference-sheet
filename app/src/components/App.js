@@ -24,7 +24,7 @@ class App extends Component {
                 </header>
                 <div className="ui container">
                     <div className="ui grid">
-                        <div className="ui divider">
+                        <div className="ui hidden divider">
                             <CharBrowser chars={this.state.chars} />
                         </div>
                     </div>
