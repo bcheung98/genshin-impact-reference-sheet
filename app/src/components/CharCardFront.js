@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from "react-dom";
 import albedoCard from "../assets/cards/Character_Albedo_Card.png";
 import amberCard from "../assets/cards/Character_Amber_Card.png";
 import barbaraCard from "../assets/cards/Character_Barbara_Card.png";
@@ -8,6 +9,9 @@ import chongyunCard from "../assets/cards/Character_Chongyun_Card.png";
 import dilucCard from "../assets/cards/Character_Diluc_Card.png";
 import dionaCard from "../assets/cards/Character_Diona_Card.png";
 import fischlCard from "../assets/cards/Character_Fischl_Card.png";
+import ganyuCard from "../assets/cards/Character_Ganyu_Card.png";
+import hutaoCard from "../assets/cards/Character_Hu_Tao_Card.png";
+import jeanCard from "../assets/cards/Character_Jean_Card.png";
 
 import fourStars from "../assets/stars/Icon_4_Stars.png";
 import fiveStars from "../assets/stars/Icon_5_Stars.png";
@@ -21,7 +25,10 @@ const cardMap = {
     "Chongyun": chongyunCard,
     "Diluc": dilucCard,
     "Diona": dionaCard,
-    "Fischl": fischlCard
+    "Fischl": fischlCard,
+    "Ganyu": ganyuCard,
+    "Hu Tao": hutaoCard,
+    "Jean": jeanCard
 }
 
 const starMap = {
@@ -29,7 +36,7 @@ const starMap = {
     5: fiveStars
 }
 
-class CharCard extends Component {
+class CharCardFront extends Component {
     render() {
         let { name, rarity, element, weapon } = this.props.char;
         return (
@@ -54,4 +61,4 @@ class CharCard extends Component {
     }
 }
 
-export default CharCard;
+export default CharCardFront;

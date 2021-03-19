@@ -70,16 +70,43 @@ const characters = [
         weapon: "Bow",
         gender: "Female",
         nation: "Mondstadt"
+    },
+    {
+        name: "Ganyu",
+        rarity: 5,
+        element: "Cryo",
+        weapon: "Bow",
+        gender: "Female",
+        nation: "Liyue"
+    },
+    {
+        name: "Hu Tao",
+        rarity: 5,
+        element: "Pyro",
+        weapon: "Polearm",
+        gender: "Female",
+        nation: "Liyue"
+    },
+    {
+        name: "Jean",
+        rarity: 5,
+        element: "Anemo",
+        weapon: "Sword",
+        gender: "Female",
+        nation: "Mondstadt"
     }
+
 ]
 
 export default characters;
 
-/* {
+/*
+{
     name: "Name",
     rarity: 0,
     element: "Element",
     weapon: "Weapon",
     gender: "Gender",
     nation: "Nation"
-} */
+}
+*/
