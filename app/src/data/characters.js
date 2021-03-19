@@ -16,6 +16,17 @@ import kleeCard from "../assets/cards/Character_Klee_Card.png";
 import lisaCard from "../assets/cards/Character_Lisa_Card.png";
 import monaCard from "../assets/cards/Character_Mona_Card.png";
 import ningguangCard from "../assets/cards/Character_Ningguang_Card.png";
+import noelleCard from "../assets/cards/Character_Noelle_Card.png";
+import qiqiCard from "../assets/cards/Character_Qiqi_Card.png";
+import razorCard from "../assets/cards/Character_Razor_Card.png";
+import sucroseCard from "../assets/cards/Character_Sucrose_Card.png";
+import tartagliaCard from "../assets/cards/Character_Tartaglia_Card.png";
+import ventiCard from "../assets/cards/Character_Venti_Card.png";
+import xianglingCard from "../assets/cards/Character_Xiangling_Card.png";
+import xiaoCard from "../assets/cards/Character_Xiao_Card.png";
+import xingqiuCard from "../assets/cards/Character_Xingqiu_Card.png";
+import xinyanCard from "../assets/cards/Character_Xinyan_Card.png";
+import zhongliCard from "../assets/cards/Character_Zhongli_Card.png";
 
 const characters = [
     {
@@ -323,6 +334,193 @@ const characters = [
         },
         gender: "Female",
         nation: "Liyue"
+    },
+    {
+        name: "Noelle",
+        title: "Chivalric Blossom",
+        rarity: 4,
+        image: noelleCard,
+        element: "Geo",
+        weapon: "Claymore",
+        materials: {
+            talents: "Resistance",
+            ascensionMat: "Basalt Pillar",
+            localMat: "Valberry",
+            commonMat: "Mask",
+            bossMat: "Claw"
+        },
+        gender: "Female",
+        nation: "Mondstadt"
+    },
+    {
+        name: "Qiqi",
+        title: "Icy Resurrection",
+        rarity: 5,
+        image: qiqiCard,
+        element: "Cryo",
+        weapon: "Sword",
+        materials: {
+            talents: "Prosperity",
+            ascensionMat: "Hoarfrost Core",
+            localMat: "Violetgrass",
+            commonMat: "Scroll",
+            bossMat: "Tail"
+        },
+        gender: "Female",
+        nation: "Liyue"
+    },
+    {
+        name: "Razor",
+        title: "Wolf Boy",
+        rarity: 4,
+        image: razorCard,
+        element: "Electro",
+        weapon: "Claymore",
+        materials: {
+            talents: "Resistance",
+            ascensionMat: "Lightning Prism",
+            localMat: "Wolfhook",
+            commonMat: "Mask",
+            bossMat: "Claw"
+        },
+        gender: "Male",
+        nation: "Mondstadt"
+    },
+    {
+        name: "Sucrose",
+        title: "Harmless Sweetie",
+        rarity: 4,
+        image: sucroseCard,
+        element: "Anemo",
+        weapon: "Catalyst",
+        materials: {
+            talents: "Freedom",
+            ascensionMat: "Hurricane Seed",
+            localMat: "Windwheel Aster",
+            commonMat: "Nectar",
+            bossMat: "Locket"
+        },
+        gender: "Female",
+        nation: "Mondstadt"
+    },
+    {
+        name: "Tartaglia",
+        title: "Childe",
+        rarity: 5,
+        image: tartagliaCard,
+        element: "Hydro",
+        weapon: "Bow",
+        materials: {
+            talents: "Freedom",
+            ascensionMat: "Cleansing Heart",
+            localMat: "Starconch",
+            commonMat: "Fatui Insignia",
+            bossMat: "Shard"
+        },
+        gender: "Male",
+        nation: "Snezhnaya"
+    },
+    {
+        name: "Venti",
+        title: "Windborne Bard",
+        rarity: 5,
+        image: ventiCard,
+        element: "Anemo",
+        weapon: "Bow",
+        materials: {
+            talents: "Ballad",
+            ascensionMat: "Hurricane Seed",
+            localMat: "Cecilia",
+            commonMat: "Slime",
+            bossMat: "Tail"
+        },
+        gender: "Male",
+        nation: "Mondstadt"
+    },
+    {
+        name: "Xiangling",
+        title: "Exquisite Delicacy",
+        rarity: 4,
+        image: xianglingCard,
+        element: "Pyro",
+        weapon: "Polearm",
+        materials: {
+            talents: "Diligence",
+            ascensionMat: "Everflame Seed",
+            localMat: "Jueyun Chili",
+            commonMat: "Slime",
+            bossMat: "Claw"
+        },
+        gender: "Female",
+        nation: "Liyue"
+    },
+    {
+        name: "Xiao",
+        title: "Vigilant Yaksha",
+        rarity: 5,
+        image: xiaoCard,
+        element: "Anemo",
+        weapon: "Polearm",
+        materials: {
+            talents: "Prosperity",
+            ascensionMat: "Juvenile Jade",
+            localMat: "Qingxin",
+            commonMat: "Slime",
+            bossMat: "Shadow"
+        },
+        gender: "Male",
+        nation: "Liyue"
+    },
+    {
+        name: "Xingqiu",
+        title: "Juvenile Galant",
+        rarity: 4,
+        image: xingqiuCard,
+        element: "Hydro",
+        weapon: "Sword",
+        materials: {
+            talents: "Gold",
+            ascensionMat: "Cleansing Heart",
+            localMat: "Silk Flower",
+            commonMat: "Mask",
+            bossMat: "Tail"
+        },
+        gender: "Male",
+        nation: "Liyue"
+    },
+    {
+        name: "Xinyan",
+        title: "Blazing Riff",
+        rarity: 4,
+        image: xinyanCard,
+        element: "Pyro",
+        weapon: "Claymore",
+        materials: {
+            talents: "Gold",
+            ascensionMat: "Everflame Seed",
+            localMat: "Violetgrass",
+            commonMat: "TR Insignia",
+            bossMat: "Tusk"
+        },
+        gender: "Female",
+        nation: "Liyue"
+    },
+    {
+        name: "Zhongli",
+        title: "Vago Mundo",
+        rarity: 5,
+        image: zhongliCard,
+        element: "Geo",
+        weapon: "Polearm",
+        materials: {
+            talents: "Gold",
+            ascensionMat: "Basalt Pillar",
+            localMat: "Cor Lapis",
+            commonMat: "Slime",
+            bossMat: "Tusk"
+        },
+        gender: "Male",
+        nation: "Liyue"
     }
 ]
 
@@ -333,6 +531,7 @@ export default characters;
     name: "Name",
     title: "Title",
     rarity: 0,
+    image: image,
     element: "Element",
     weapon: "Weapon",
     materials: {
