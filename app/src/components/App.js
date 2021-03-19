@@ -23,10 +23,9 @@ class App extends Component {
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
                 <div className="ui container">
+                    <div className="ui hidden divider"></div>
                     <div className="ui grid">
-                        <div className="ui hidden divider">
-                            <CharBrowser chars={this.state.chars} />
-                        </div>
+                        <CharBrowser chars={this.state.chars} />
                     </div>
                 </div>
             </div>
