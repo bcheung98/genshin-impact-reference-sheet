@@ -6,11 +6,11 @@ class CharCard extends Component {
 
     flipCardFromFront = (char) => {
         document.getElementById(`${char.name}-front`).style = "transform: rotateY(180deg);transition: transform 0.5s;transform-style: preserve-3d";
-        document.getElementById(`${char.name}-back`).style = `transform: rotateY(0deg);transition: transform 0.5s;transform-style: preserve-3d;background-image: url(${char.imageAvatar})`;
+        document.getElementById(`${char.name}-back`).style = `transform: rotateY(0deg);transition: transform 0.5s;transform-style: preserve-3d;background-image: url(${char.images.avatar})`;
     }
 
     flipCardFromBack = (char) => {
-        document.getElementById(`${char.name}-back`).style = `transform: rotateY(180deg);transition: transform 0.5s;transform-style: preserve-3d;background-image: url(${char.imageAvatar})`;
+        document.getElementById(`${char.name}-back`).style = `transform: rotateY(180deg);transition: transform 0.5s;transform-style: preserve-3d;background-image: url(${char.images.avatar})`;
         document.getElementById(`${char.name}-front`).style = "transform: rotateY(0deg);transition: transform 0.5s;transform-style: preserve-3d";
     }
 
