@@ -7,8 +7,8 @@ class CharCard extends Component {
     render() {
         return (
             <div className="char-card">
-                <CharCardFront char={this.props.char} />
-                <CharCardBack char={this.props.char} />
+                <CharCardFront char={this.props.char} flipCardFromFront={this.props.flipCardFromFront} flipCardFromBack={this.props.flipCardFromBack} />
+                <CharCardBack char={this.props.char} flipCardFromFront={this.props.flipCardFromFront} flipCardFromBack={this.props.flipCardFromBack} />
             </div>
         )
     }

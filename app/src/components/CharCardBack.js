@@ -5,7 +5,7 @@ class CharCardBack extends Component {
     render() {
         let { talents, ascensionMat, localMat, commonMat, bossMat } = this.props.char.materials;
         return (
-            <div className="char-card-back">
+            <div id={`${this.props.char.name}-back`} className="char-card-back" onClick={() => this.props.flipCardFromBack(this.props.char.name)}>
                 <p>Talent Material: {talents}</p>
                 <p>Ascension Material: {ascensionMat}</p>
                 <p>Local Specialty: {localMat}</p>

@@ -13,20 +13,16 @@ code {
 }
 
 .char-card {
-    background-color: transparent;
-    border: 1px solid gray;
-    width: 281px;
-    height: 650px; 
-    margin: 15px;
+    width: 285px;
+    height: 660px; 
+    margin: 10px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
 
-.char-card:hover {
-    transform: rotateY(180deg);
-}
-
 .char-card-front, .char-card-back {
+    border: 2px solid black;
+    border-radius: 5px;
     position: absolute;
     width: inherit;
     height: inherit;
@@ -37,5 +33,10 @@ code {
 }
 
 .char-card-back {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
+}
+
+.rating-img {
+    width: auto;
+    height: 20px;
 }
