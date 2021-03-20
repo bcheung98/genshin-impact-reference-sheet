@@ -1,9 +1,15 @@
 import albedoCard from "../assets/cards/Character_Albedo_Card.png";
+import albedoAvatar from "../assets/avatars/Character_Albedo_Avatar.png";
 import amberCard from "../assets/cards/Character_Amber_Card.png";
+import amberAvatar from "../assets/avatars/Character_Amber_Avatar.png"
 import barbaraCard from "../assets/cards/Character_Barbara_Card.png";
+import barbaraAvatar from "../assets/avatars/Character_Barbara_Avatar.png";
 import beidouCard from "../assets/cards/Character_Beidou_Card.png";
+import beidouAvatar from "../assets/avatars/Character_Beidou_Avatar.png";
 import bennettCard from "../assets/cards/Character_Bennett_Card.png";
+import bennettAvatar from "../assets/avatars/Character_Bennett_Avatar.png";
 import chongyunCard from "../assets/cards/Character_Chongyun_Card.png";
+import chongyunAvatar from "../assets/avatars/Character_Chongyun_Avatar.png";
 import dilucCard from "../assets/cards/Character_Diluc_Card.png";
 import dionaCard from "../assets/cards/Character_Diona_Card.png";
 import fischlCard from "../assets/cards/Character_Fischl_Card.png";
@@ -33,7 +39,8 @@ const characters = [
         name: "Albedo",
         title: "Kreideprinz",
         rarity: 5,
-        image: albedoCard,
+        imageCard: albedoCard,
+        imageAvatar: albedoAvatar,
         element: "Geo",
         weapon: "Sword",
         materials: {
@@ -50,7 +57,8 @@ const characters = [
         name: "Amber",
         title: "Gliding Champion",
         rarity: 4,
-        image: amberCard,
+        imageCard: amberCard,
+        imageAvatar: amberAvatar,
         element: "Pyro",
         weapon: "Bow",
         materials: {
@@ -67,7 +75,8 @@ const characters = [
         name: "Barbara",
         title: "Shining Idol",
         rarity: 4,
-        image: barbaraCard,
+        imageCard: barbaraCard,
+        imageAvatar: barbaraAvatar,
         element: "Hydro",
         weapon: "Catalyst",
         materials: {
@@ -84,7 +93,8 @@ const characters = [
         name: "Beidou",
         title: "Uncrowned Lord of the Ocean",
         rarity: 4,
-        image: beidouCard,
+        imageCard: beidouCard,
+        imageAvatar: beidouAvatar,
         element: "Electro",
         weapon: "Claymore",
         materials: {
@@ -101,7 +111,8 @@ const characters = [
         name: "Bennett",
         title: "Trial by Fire",
         rarity: 4,
-        image: bennettCard,
+        imageCard: bennettCard,
+        imageAvatar: bennettAvatar,
         element: "Pyro",
         weapon: "Sword",
         materials: {
@@ -118,7 +129,8 @@ const characters = [
         name: "Chongyun",
         title: "Frozen Ardor",
         rarity: 4,
-        image: chongyunCard,
+        imageCard: chongyunCard,
+        imageAvatar: chongyunAvatar,
         element: "Cryo",
         weapon: "Claymore",
         materials: {
@@ -135,7 +147,7 @@ const characters = [
         name: "Diluc",
         title: "The Dark Side of Dawn",
         rarity: 5,
-        image: dilucCard,
+        imageCard: dilucCard,
         element: "Pyro",
         weapon: "Claymore",
         materials: {
@@ -152,7 +164,7 @@ const characters = [
         name: "Diona",
         title: "Kätzlein Cocktail",
         rarity: 4,
-        image: dionaCard,
+        imageCard: dionaCard,
         element: "Cryo",
         weapon: "Bow",
         materials: {
@@ -169,7 +181,7 @@ const characters = [
         name: "Fischl",
         title: "Prinzessin der Verurteilung",
         rarity: 4,
-        image: fischlCard,
+        imageCard: fischlCard,
         element: "Electro",
         weapon: "Bow",
         materials: {
@@ -186,7 +198,7 @@ const characters = [
         name: "Ganyu",
         title: "Plenilune Gaze",
         rarity: 5,
-        image: ganyuCard,
+        imageCard: ganyuCard,
         element: "Cryo",
         weapon: "Bow",
         materials: {
@@ -203,7 +215,7 @@ const characters = [
         name: "Hu Tao",
         title: "Fragrance in Thaw",
         rarity: 5,
-        image: hutaoCard,
+        imageCard: hutaoCard,
         element: "Pyro",
         weapon: "Polearm",
         materials: {
@@ -220,7 +232,7 @@ const characters = [
         name: "Jean",
         title: "Dandelion Knight",
         rarity: 5,
-        image: jeanCard,
+        imageCard: jeanCard,
         element: "Anemo",
         weapon: "Sword",
         materials: {
@@ -237,7 +249,7 @@ const characters = [
         name: "Kaeya",
         title: "Frostwind Swordsman",
         rarity: 4,
-        image: kaeyaCard,
+        imageCard: kaeyaCard,
         element: "Cryo",
         weapon: "Sword",
         materials: {
@@ -254,7 +266,7 @@ const characters = [
         name: "Keqing",
         title: "Driving Thunder",
         rarity: 5,
-        image: keqingCard,
+        imageCard: keqingCard,
         element: "Electro",
         weapon: "Sword",
         materials: {
@@ -271,7 +283,7 @@ const characters = [
         name: "Klee",
         title: "Fleeing Sunlight",
         rarity: 5,
-        image: kleeCard,
+        imageCard: kleeCard,
         element: "Pyro",
         weapon: "Catalyst",
         materials: {
@@ -288,7 +300,7 @@ const characters = [
         name: "Lisa",
         title: "Witch of Purple Rose",
         rarity: 4,
-        image: lisaCard,
+        imageCard: lisaCard,
         element: "Electro",
         weapon: "Catalyst",
         materials: {
@@ -305,7 +317,7 @@ const characters = [
         name: "Mona",
         title: "Astral Reflection",
         rarity: 5,
-        image: monaCard,
+        imageCard: monaCard,
         element: "Hydro",
         weapon: "Catalyst",
         materials: {
@@ -322,7 +334,7 @@ const characters = [
         name: "Ningguang",
         title: "Eclipsing Star",
         rarity: 4,
-        image: ningguangCard,
+        imageCard: ningguangCard,
         element: "Geo",
         weapon: "Catalyst",
         materials: {
@@ -339,7 +351,7 @@ const characters = [
         name: "Noelle",
         title: "Chivalric Blossom",
         rarity: 4,
-        image: noelleCard,
+        imageCard: noelleCard,
         element: "Geo",
         weapon: "Claymore",
         materials: {
@@ -356,7 +368,7 @@ const characters = [
         name: "Qiqi",
         title: "Icy Resurrection",
         rarity: 5,
-        image: qiqiCard,
+        imageCard: qiqiCard,
         element: "Cryo",
         weapon: "Sword",
         materials: {
@@ -373,7 +385,7 @@ const characters = [
         name: "Razor",
         title: "Wolf Boy",
         rarity: 4,
-        image: razorCard,
+        imageCard: razorCard,
         element: "Electro",
         weapon: "Claymore",
         materials: {
@@ -390,7 +402,7 @@ const characters = [
         name: "Sucrose",
         title: "Harmless Sweetie",
         rarity: 4,
-        image: sucroseCard,
+        imageCard: sucroseCard,
         element: "Anemo",
         weapon: "Catalyst",
         materials: {
@@ -407,7 +419,7 @@ const characters = [
         name: "Tartaglia",
         title: "Childe",
         rarity: 5,
-        image: tartagliaCard,
+        imageCard: tartagliaCard,
         element: "Hydro",
         weapon: "Bow",
         materials: {
@@ -424,7 +436,7 @@ const characters = [
         name: "Venti",
         title: "Windborne Bard",
         rarity: 5,
-        image: ventiCard,
+        imageCard: ventiCard,
         element: "Anemo",
         weapon: "Bow",
         materials: {
@@ -441,7 +453,7 @@ const characters = [
         name: "Xiangling",
         title: "Exquisite Delicacy",
         rarity: 4,
-        image: xianglingCard,
+        imageCard: xianglingCard,
         element: "Pyro",
         weapon: "Polearm",
         materials: {
@@ -458,7 +470,7 @@ const characters = [
         name: "Xiao",
         title: "Vigilant Yaksha",
         rarity: 5,
-        image: xiaoCard,
+        imageCard: xiaoCard,
         element: "Anemo",
         weapon: "Polearm",
         materials: {
@@ -475,7 +487,7 @@ const characters = [
         name: "Xingqiu",
         title: "Juvenile Galant",
         rarity: 4,
-        image: xingqiuCard,
+        imageCard: xingqiuCard,
         element: "Hydro",
         weapon: "Sword",
         materials: {
@@ -492,7 +504,7 @@ const characters = [
         name: "Xinyan",
         title: "Blazing Riff",
         rarity: 4,
-        image: xinyanCard,
+        imageCard: xinyanCard,
         element: "Pyro",
         weapon: "Claymore",
         materials: {
@@ -509,7 +521,7 @@ const characters = [
         name: "Zhongli",
         title: "Vago Mundo",
         rarity: 5,
-        image: zhongliCard,
+        imageCard: zhongliCard,
         element: "Geo",
         weapon: "Polearm",
         materials: {
@@ -531,7 +543,10 @@ export default characters;
     name: "Name",
     title: "Title",
     rarity: 0,
-    image: image,
+    images: {
+        card: card,
+        avatar: avatar
+    },
     element: "Element",
     weapon: "Weapon",
     materials: {

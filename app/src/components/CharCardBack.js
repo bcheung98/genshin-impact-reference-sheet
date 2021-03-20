@@ -3,9 +3,11 @@ import React, { Component } from "react";
 class CharCardBack extends Component {
 
     render() {
-        let { talents, ascensionMat, localMat, commonMat, bossMat } = this.props.char.materials;
+        let { char } = this.props
+        let { talents, ascensionMat, localMat, commonMat, bossMat } = char.materials;
+        console.log(char.imageAvatar);
         return (
-            <div id={`${this.props.char.name}-back`} className="char-card-back" onClick={() => this.props.flipCardFromBack(this.props.char.name)}>
+            <div id={`${char.name}-back`} className="char-card-back" onClick={() => this.props.flipCardFromBack(this.props.char)} >
                 <p>Talent Material: {talents}</p>
                 <p>Ascension Material: {ascensionMat}</p>
                 <p>Local Specialty: {localMat}</p>

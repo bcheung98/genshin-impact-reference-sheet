@@ -4,14 +4,14 @@ import CharCardBack from "./CharCardBack";
 
 class CharCard extends Component {
 
-    flipCardFromFront = (card) => {
-        document.getElementById(`${card}-front`).style = "transform: rotateY(180deg);transition: transform 0.8s;transform-style: preserve-3d";
-        document.getElementById(`${card}-back`).style = "transform: rotateY(0deg);transition: transform 0.8s;transform-style: preserve-3d";
+    flipCardFromFront = (char) => {
+        document.getElementById(`${char.name}-front`).style = "transform: rotateY(180deg);transition: transform 0.8s;transform-style: preserve-3d";
+        document.getElementById(`${char.name}-back`).style = `transform: rotateY(0deg);transition: transform 0.8s;transform-style: preserve-3d;background-image: url(${char.imageAvatar})`;
     }
 
-    flipCardFromBack = (card) => {
-        document.getElementById(`${card}-back`).style = "transform: rotateY(180deg);transition: transform 0.8s;transform-style: preserve-3d";
-        document.getElementById(`${card}-front`).style = "transform: rotateY(0deg);transition: transform 0.8s;transform-style: preserve-3d";
+    flipCardFromBack = (char) => {
+        document.getElementById(`${char.name}-back`).style = "transform: rotateY(180deg);transition: transform 0.8s;transform-style: preserve-3d";
+        document.getElementById(`${char.name}-front`).style = "transform: rotateY(0deg);transition: transform 0.8s;transform-style: preserve-3d";
     }
 
     render() {

@@ -11,13 +11,13 @@ const starMap = {
 class CharCardFront extends Component {
 
     render() {
-        let { name, title, rarity, image, element, weapon } = this.props.char;
+        let { name, title, rarity, imageCard, element, weapon } = this.props.char;
         return (
-            <div id={`${name}-front`} className="char-card-front" onClick={() => this.props.flipCardFromFront(name)}>
+            <div id={`${name}-front`} className="char-card-front" onClick={() => this.props.flipCardFromFront(this.props.char)}>
                 <h3>{name.toUpperCase()}</h3>
                 <p><i>{title}</i></p>
                 <img className="rating-img" src={starMap[rarity]} alt={rarity} />
-                <img src={image} alt={name} />
+                <img src={imageCard} alt={name} />
                 <p><b>Element:</b> {element}</p>
                 <p><b>Weapon:</b> {weapon}</p>
             </div>
