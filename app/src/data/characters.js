@@ -91,7 +91,7 @@ const characters = [
             talents: "Gold",
             ascensionMat: "Lightning Prism",
             localMat: "Noctilous Jade",
-            commonMat: "TR Insignia",
+            commonMat: "TH Insignia",
             bossMat: "Dvalin's Sigh"
         },
         gender: "Female",
@@ -108,7 +108,7 @@ const characters = [
             talents: "Resistance",
             ascensionMat: "Everflame Seed",
             localMat: "Windwheel Aster",
-            commonMat: "TR Insignia",
+            commonMat: "TH Insignia",
             bossMat: "Dvalin's Plume"
         },
         gender: "Male",
@@ -244,7 +244,7 @@ const characters = [
             talents: "Ballad",
             ascensionMat: "Hoarfrost Core",
             localMat: "Calla Lily",
-            commonMat: "TR Insignia",
+            commonMat: "TH Insignia",
             bossMat: "Spirit Locket of Boreas"
         },
         gender: "Male",
@@ -499,7 +499,7 @@ const characters = [
             talents: "Gold",
             ascensionMat: "Everflame Seed",
             localMat: "Violetgrass",
-            commonMat: "TR Insignia",
+            commonMat: "TH Insignia",
             bossMat: "Tusk of Monoceros Caeli"
         },
         gender: "Female",
