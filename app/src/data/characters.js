@@ -41,7 +41,7 @@ const characters = [
             ascensionMat: "Basalt Pillar",
             localMat: "Cecilia",
             commonMat: "Scroll",
-            bossMat: "Tusk"
+            bossMat: "Tusk of Monoceros Caeli"
         },
         gender: "Male",
         nation: "Mondstadt",
@@ -58,7 +58,7 @@ const characters = [
             ascensionMat: "Everflame Seed",
             localMat: "Small Lamp Grass",
             commonMat: "Arrow",
-            bossMat: "Sigh"
+            bossMat: "Dvalin's Sigh"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -75,7 +75,7 @@ const characters = [
             ascensionMat: "Cleansing Heart",
             localMat: "Philanemo Mushroom",
             commonMat: "Scroll",
-            bossMat: "Ring"
+            bossMat: "Ring of Boreas"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -92,7 +92,7 @@ const characters = [
             ascensionMat: "Lightning Prism",
             localMat: "Noctilous Jade",
             commonMat: "TR Insignia",
-            bossMat: "Sigh"
+            bossMat: "Dvalin's Sigh"
         },
         gender: "Female",
         nation: "Liyue"
@@ -109,7 +109,7 @@ const characters = [
             ascensionMat: "Everflame Seed",
             localMat: "Windwheel Aster",
             commonMat: "TR Insignia",
-            bossMat: "Plume"
+            bossMat: "Dvalin's Plume"
         },
         gender: "Male",
         nation: "Mondstadt"
@@ -126,7 +126,7 @@ const characters = [
             ascensionMat: "Hoarfrost Core",
             localMat: "Cor Lapis",
             commonMat: "Mask",
-            bossMat: "Sigh"
+            bossMat: "Dvalin's Sigh"
         },
         gender: "Male",
         nation: "Liyue"
@@ -143,7 +143,7 @@ const characters = [
             ascensionMat: "Everflame Seed",
             localMat: "Small Lamp Grass",
             commonMat: "Fatui Insignia",
-            bossMat: "Plume"
+            bossMat: "Dvalin's Plume"
         },
         gender: "Male",
         nation: "Mondstadt"
@@ -160,7 +160,7 @@ const characters = [
             ascensionMat: "Hoarfrost Core",
             localMat: "Calla Lily",
             commonMat: "Arrow",
-            bossMat: "Shard"
+            bossMat: "Shard of a Foul Legacy"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -177,7 +177,7 @@ const characters = [
             ascensionMat: "Lightning Prism",
             localMat: "Small Lamp Grass",
             commonMat: "Arrow",
-            bossMat: "Locket"
+            bossMat: "Spirit Locket of Boreas"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -194,7 +194,7 @@ const characters = [
             ascensionMat: "Hoarfrost Core",
             localMat: "Qingxin",
             commonMat: "Nectar",
-            bossMat: "Shadow"
+            bossMat: "Shadow of the Warrior"
         },
         gender: "Female",
         nation: "Liyue"
@@ -211,7 +211,7 @@ const characters = [
             ascensionMat: "Juvenile Jade",
             localMat: "Silk Flower",
             commonMat: "Nectar",
-            bossMat: "Shard"
+            bossMat: "Shard of a Foul Legacy"
         },
         gender: "Female",
         nation: "Liyue"
@@ -228,7 +228,7 @@ const characters = [
             ascensionMat: "Hurricane Seed",
             localMat: "Dandelion Seed",
             commonMat: "Mask",
-            bossMat: "Plume"
+            bossMat: "Dvalin's Plume"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -245,7 +245,7 @@ const characters = [
             ascensionMat: "Hoarfrost Core",
             localMat: "Calla Lily",
             commonMat: "TR Insignia",
-            bossMat: "Locket"
+            bossMat: "Spirit Locket of Boreas"
         },
         gender: "Male",
         nation: "Mondstadt"
@@ -262,7 +262,7 @@ const characters = [
             ascensionMat: "Lightning Prism",
             localMat: "Cor Lapis",
             commonMat: "Nectar",
-            bossMat: "Ring"
+            bossMat: "Ring of Boreas"
         },
         gender: "Female",
         nation: "Liyue"
@@ -279,7 +279,7 @@ const characters = [
             ascensionMat: "Everflame Seed",
             localMat: "Philanemo Mushroom",
             commonMat: "Scroll",
-            bossMat: "Ring"
+            bossMat: "Ring of Boreas"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -296,7 +296,7 @@ const characters = [
             ascensionMat: "Lightning Prism",
             localMat: "Valberry",
             commonMat: "Slime",
-            bossMat: "Claw"
+            bossMat: "Dvalin's Claw"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -313,7 +313,7 @@ const characters = [
             ascensionMat: "Cleansing Heart",
             localMat: "Philanemo Mushroom",
             commonMat: "Nectar",
-            bossMat: "Ring"
+            bossMat: "Ring of Boreas"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -330,7 +330,7 @@ const characters = [
             ascensionMat: "Basalt Pillar",
             localMat: "Glaze Lily",
             commonMat: "Fatui Insignia",
-            bossMat: "Locket"
+            bossMat: "Spirit Locket of Boreas"
         },
         gender: "Female",
         nation: "Liyue"
@@ -347,7 +347,7 @@ const characters = [
             ascensionMat: "Basalt Pillar",
             localMat: "Valberry",
             commonMat: "Mask",
-            bossMat: "Claw"
+            bossMat: "Dvalin's Claw"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -364,7 +364,7 @@ const characters = [
             ascensionMat: "Hoarfrost Core",
             localMat: "Violetgrass",
             commonMat: "Scroll",
-            bossMat: "Tail"
+            bossMat: "Tail of Boreas"
         },
         gender: "Female",
         nation: "Liyue"
@@ -381,7 +381,7 @@ const characters = [
             ascensionMat: "Lightning Prism",
             localMat: "Wolfhook",
             commonMat: "Mask",
-            bossMat: "Claw"
+            bossMat: "Dvalin's Claw"
         },
         gender: "Male",
         nation: "Mondstadt"
@@ -398,7 +398,7 @@ const characters = [
             ascensionMat: "Hurricane Seed",
             localMat: "Windwheel Aster",
             commonMat: "Nectar",
-            bossMat: "Locket"
+            bossMat: "Spirit Locket of Boreas"
         },
         gender: "Female",
         nation: "Mondstadt"
@@ -415,7 +415,7 @@ const characters = [
             ascensionMat: "Cleansing Heart",
             localMat: "Starconch",
             commonMat: "Fatui Insignia",
-            bossMat: "Shard"
+            bossMat: "Shard of a Foul Legacy"
         },
         gender: "Male",
         nation: "Snezhnaya"
@@ -432,7 +432,7 @@ const characters = [
             ascensionMat: "Hurricane Seed",
             localMat: "Cecilia",
             commonMat: "Slime",
-            bossMat: "Tail"
+            bossMat: "Tail of Boreas"
         },
         gender: "Male",
         nation: "Mondstadt"
@@ -449,7 +449,7 @@ const characters = [
             ascensionMat: "Everflame Seed",
             localMat: "Jueyun Chili",
             commonMat: "Slime",
-            bossMat: "Claw"
+            bossMat: "Dvalin's Claw"
         },
         gender: "Female",
         nation: "Liyue"
@@ -466,7 +466,7 @@ const characters = [
             ascensionMat: "Juvenile Jade",
             localMat: "Qingxin",
             commonMat: "Slime",
-            bossMat: "Shadow"
+            bossMat: "Shadow of the Warrior"
         },
         gender: "Male",
         nation: "Liyue"
@@ -483,7 +483,7 @@ const characters = [
             ascensionMat: "Cleansing Heart",
             localMat: "Silk Flower",
             commonMat: "Mask",
-            bossMat: "Tail"
+            bossMat: "Tail of Boreas"
         },
         gender: "Male",
         nation: "Liyue"
@@ -500,7 +500,7 @@ const characters = [
             ascensionMat: "Everflame Seed",
             localMat: "Violetgrass",
             commonMat: "TR Insignia",
-            bossMat: "Tusk"
+            bossMat: "Tusk of Monoceros Caeli"
         },
         gender: "Female",
         nation: "Liyue"
@@ -517,7 +517,7 @@ const characters = [
             ascensionMat: "Basalt Pillar",
             localMat: "Cor Lapis",
             commonMat: "Slime",
-            bossMat: "Tusk"
+            bossMat: "Tusk of Monoceros Caeli"
         },
         gender: "Male",
         nation: "Liyue"

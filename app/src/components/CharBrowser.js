@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import CharCardFront from "./CharCardFront";
+import CharCard from "./CharCard"
 
 class CharBrowser extends Component {
+    
     render() {
         return (
             <div className="ui centered cards">
-                {this.props.chars.map(char => <CharCardFront key={char.name} char={char} />)}
+                {this.props.chars.map(char => <CharCard key={char.name} char={char} />)}
             </div>
         )
     }
