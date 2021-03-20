@@ -11,8 +11,11 @@ import bennettAvatar from "../assets/avatars/Character_Bennett_Avatar.png";
 import chongyunCard from "../assets/cards/Character_Chongyun_Card.png";
 import chongyunAvatar from "../assets/avatars/Character_Chongyun_Avatar.png";
 import dilucCard from "../assets/cards/Character_Diluc_Card.png";
+import dilucAvatar from "../assets/avatars/Character_Diluc_Avatar.png";
 import dionaCard from "../assets/cards/Character_Diona_Card.png";
+import dionaAvatar from "../assets/avatars/Character_Diona_Avatar.png";
 import fischlCard from "../assets/cards/Character_Fischl_Card.png";
+import fischlAvatar from "../assets/avatars/Character_Fischl_Avatar.png";
 import ganyuCard from "../assets/cards/Character_Ganyu_Card.png";
 import hutaoCard from "../assets/cards/Character_Hu_Tao_Card.png";
 import jeanCard from "../assets/cards/Character_Jean_Card.png";
@@ -148,6 +151,7 @@ const characters = [
         title: "The Dark Side of Dawn",
         rarity: 5,
         imageCard: dilucCard,
+        imageAvatar: dilucAvatar,
         element: "Pyro",
         weapon: "Claymore",
         materials: {
@@ -165,6 +169,7 @@ const characters = [
         title: "Kätzlein Cocktail",
         rarity: 4,
         imageCard: dionaCard,
+        imageAvatar: dionaAvatar,
         element: "Cryo",
         weapon: "Bow",
         materials: {
@@ -182,6 +187,7 @@ const characters = [
         title: "Prinzessin der Verurteilung",
         rarity: 4,
         imageCard: fischlCard,
+        imageAvatar: fischlAvatar,
         element: "Electro",
         weapon: "Bow",
         materials: {
