@@ -16,8 +16,6 @@ code {
     width: 285px;
     height: 660px; 
     margin: 10px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
 }
 
 .char-card-front, .char-card-back {
