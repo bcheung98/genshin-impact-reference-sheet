@@ -6,7 +6,7 @@ class CharBrowser extends Component {
     render() {
         return (
             <div className="ui centered cards">
-                {this.props.chars.map(char => <CharCard key={char.name} char={char} flipCardFromFront={this.props.flipCardFromFront} flipCardFromBack={this.props.flipCardFromBack} />)}
+                {this.props.chars.map(char => <CharCard key={char.name} char={char} />)}
             </div>
         )
     }

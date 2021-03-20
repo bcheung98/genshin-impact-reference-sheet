@@ -16,16 +16,6 @@ class App extends Component {
         }
     }
 
-    flipCardFromFront = (card) => {
-        document.getElementById(`${card}-front`).style = "transform: rotateY(180deg);transition: transform 0.8s;transform-style: preserve-3d";
-        document.getElementById(`${card}-back`).style = "transform: rotateY(0deg);transition: transform 0.8s;transform-style: preserve-3d";
-    }
-
-    flipCardFromBack = (card) => {
-        document.getElementById(`${card}-back`).style = "transform: rotateY(180deg);transition: transform 0.8s;transform-style: preserve-3d";
-        document.getElementById(`${card}-front`).style = "transform: rotateY(0deg);transition: transform 0.8s;transform-style: preserve-3d";
-    }
-
     render() {
         return (
             <div className="ui container">
@@ -35,7 +25,7 @@ class App extends Component {
                 <div className="ui container">
                     <div className="ui hidden section divider"></div>
                     <div className="ui grid">
-                        <CharBrowser chars={this.state.chars} flipCardFromFront={this.flipCardFromFront} flipCardFromBack={this.flipCardFromBack}/>
+                        <CharBrowser chars={this.state.chars} />
                     </div>
                 </div>
             </div>
