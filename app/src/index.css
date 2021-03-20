@@ -14,16 +14,17 @@ code {
 
 .char-card {
     width: 285px;
-    height: 660px; 
+    height: 675px; 
     margin: 10px;
 }
 
 .char-card-front, .char-card-back {
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 15px;
     position: absolute;
     width: inherit;
     height: inherit;
+    padding-top: 10px;
     backface-visibility: hidden;
     text-align: center;
     color: black;
@@ -35,6 +36,5 @@ code {
 }
 
 .rating-img {
-    width: auto;
     height: 20px;
 }

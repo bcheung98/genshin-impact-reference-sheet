@@ -14,7 +14,7 @@ class CharCardFront extends Component {
         let { name, title, rarity, image, element, weapon } = this.props.char;
         return (
             <div id={`${name}-front`} className="char-card-front" onClick={() => this.props.flipCardFromFront(name)}>
-                <p>{name.toUpperCase()}</p>
+                <h3>{name.toUpperCase()}</h3>
                 <p><i>{title}</i></p>
                 <img className="rating-img" src={starMap[rarity]} alt={rarity} />
                 <img src={image} alt={name} />
