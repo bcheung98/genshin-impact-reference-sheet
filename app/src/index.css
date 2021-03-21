@@ -14,12 +14,12 @@ code {
 
 .char-card {
     width: 285px;
-    height: 800px; 
+    height: 870px; 
     margin: 10px;
 }
 
 .char-card-front, .char-card-back {
-    border: 2px solid black;
+    border: 2px solid gray;
     border-radius: 15px;
     position: absolute;
     width: inherit;
@@ -28,7 +28,7 @@ code {
     backface-visibility: hidden;
     text-align: center;
     color: black;
-    background-color: #ddd;
+    background-color: #ccc;
 }
 
 .char-card-back {
@@ -40,14 +40,29 @@ code {
 }
 
 .material-img-back {
-    border: 2px solid black;
+    border: 2px solid gray;
     border-radius: 15px;
-    background-color: #ddd;
-    margin: 10px;
+    background-color: #bbb;
+    margin: 5px;
+    height: 64px;
     width: 64px;
+}
+
+.nation-img {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    height: 64px;
+}
+
+.char-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 5px;
 }
 
 .char-desc {
     margin-left: 7.5px;
     margin-right: 7.5px;
+    font-style: italic;
 }

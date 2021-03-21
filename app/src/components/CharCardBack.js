@@ -80,7 +80,7 @@ const ascensionMatsMap = {
     "Hurricane Seed": hurricaneSeed,
     "Juvenile Jade": juvenileJade,
     "Lightning Prism": lightningPrism
-}; 
+};
 
 const bossMatsMap = {
     "Dvalin's Claw": claw,
@@ -140,12 +140,12 @@ class CharCardBack extends Component {
         return (
             <div id={`${char.name}-back`} className="char-card-back" onClick={() => this.props.flipCardFromBack(this.props.char)} >
                 <div>
-                    <img className="material-img-back" src={talentMatsMap[talents]}/>
-                    <img className="material-img-back" src={ascensionMatsMap[ascensionMat]}/>
-                    <img className="material-img-back" src={ascensionGemsMap[char.element]} />
-                    <img className="material-img-back" src={localSpecialtiesMap[localMat]}/>
-                    <img className="material-img-back" src={commonMatsMap[commonMat]}/>
-                    <img className="material-img-back" src={bossMatsMap[bossMat]}/>
+                    <img className="material-img-back" src={talentMatsMap[talents]} alt={talents} />
+                    <img className="material-img-back" src={ascensionMatsMap[ascensionMat]} alt={ascensionMat} />
+                    <img className="material-img-back" src={ascensionGemsMap[char.element]} alt={char.element} />
+                    <img className="material-img-back" src={localSpecialtiesMap[localMat]} alt={localMat} />
+                    <img className="material-img-back" src={commonMatsMap[commonMat]} alt={commonMat} />
+                    <img className="material-img-back" src={bossMatsMap[bossMat]} alt={bossMat} />
                 </div>
             </div>
         )

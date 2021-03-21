@@ -16,6 +16,9 @@ import sword from "../assets/weapons/Weapon-class-sword-icon.png";
 import fourStars from "../assets/stars/Icon_4_Stars.png";
 import fiveStars from "../assets/stars/Icon_5_Stars.png";
 
+import mondstadt from "../assets/nations/Mondstadt.png";
+import liyue from "../assets/nations/Liyue.png";
+
 const elementMap = {
     "Anemo": anemo,
     "Cryo": cryo,
@@ -38,24 +41,32 @@ const starMap = {
     5: fiveStars
 };
 
+const nationMap = {
+    "Mondstadt": mondstadt,
+    "Liyue": liyue
+};
+
 class CharCardFront extends Component {
 
     render() {
-        let { name, title, rarity, images, element, weapon, description } = this.props.char;
+        let { name, title, rarity, images, element, weapon, description, nation } = this.props.char;
         return (
             <div id={`${name}-front`} className="char-card-front" onClick={() => this.props.flipCardFromFront(this.props.char)}>
                 <div>
-                    <h2>{name.toUpperCase()}</h2>
+                    <h1>{name}</h1>
                     <img className="rating-img" src={starMap[rarity]} alt={rarity} />
                     <div>
                         <img src={elementMap[element]} alt={element} />
                         <img src={weaponMap[weapon]} alt={weapon} />
                     </div>
                 </div>
-                <p><i>{title}</i></p>
+                <div className="char-title">
+                    {title}
+                </div>
                 <img src={images.card} alt={name} />
+                <img className="nation-img" src={nationMap[nation]} alt={nation} />
                 <div className="char-desc">
-                    <p><i>{description}</i></p>
+                    {description}
                 </div>
             </div>
         )
