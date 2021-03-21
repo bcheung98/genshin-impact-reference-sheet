@@ -38,3 +38,11 @@ code {
 .rating-img {
     height: 25px;
 }
+
+.material-img-back {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #ddd;
+    margin: 10px;
+    width: 64px;
+}

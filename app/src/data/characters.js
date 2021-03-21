@@ -131,7 +131,7 @@ const characters = [
         materials: {
             talents: "Gold",
             ascensionMat: "Lightning Prism",
-            localMat: "Noctilous Jade",
+            localMat: "Noctilucous Jade",
             commonMat: "TH Insignia",
             bossMat: "Dvalin's Sigh"
         },
