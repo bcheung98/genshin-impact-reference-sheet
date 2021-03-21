@@ -5,7 +5,6 @@ class CharCardBack extends Component {
     render() {
         let { char } = this.props
         let { talents, ascensionMat, localMat, commonMat, bossMat } = char.materials;
-        console.log(char.imageAvatar);
         return (
             <div id={`${char.name}-back`} className="char-card-back" onClick={() => this.props.flipCardFromBack(this.props.char)} >
                 <p>Talent Material: {talents}</p>
