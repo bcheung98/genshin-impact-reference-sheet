@@ -41,7 +41,7 @@ const starMap = {
 class CharCardFront extends Component {
 
     render() {
-        let { name, title, rarity, images, element, weapon } = this.props.char;
+        let { name, title, rarity, images, element, weapon, description } = this.props.char;
         return (
             <div id={`${name}-front`} className="char-card-front" onClick={() => this.props.flipCardFromFront(this.props.char)}>
                 <div>
@@ -54,6 +54,9 @@ class CharCardFront extends Component {
                 </div>
                 <p><i>{title}</i></p>
                 <img src={images.card} alt={name} />
+                <div className="char-desc">
+                    <p><i>{description}</i></p>
+                </div>
             </div>
         )
     }

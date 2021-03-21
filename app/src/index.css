@@ -14,7 +14,7 @@ code {
 
 .char-card {
     width: 285px;
-    height: 750px; 
+    height: 800px; 
     margin: 10px;
 }
 
@@ -45,4 +45,9 @@ code {
     background-color: #ddd;
     margin: 10px;
     width: 64px;
+}
+
+.char-desc {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
 }

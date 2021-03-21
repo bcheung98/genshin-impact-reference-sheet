@@ -75,6 +75,7 @@ const characters = [
             commonMat: "Scroll",
             bossMat: "Tusk of Monoceros Caeli"
         },
+        description: "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.",
         gender: "Male",
         nation: "Mondstadt",
     },
@@ -95,6 +96,7 @@ const characters = [
             commonMat: "Arrow",
             bossMat: "Dvalin's Sigh"
         },
+        description: "Always energetic and full of life, Amber's the best - albeit only - Outrider of the Knights of Favonius.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -115,6 +117,7 @@ const characters = [
             commonMat: "Scroll",
             bossMat: "Ring of Boreas"
         },
+        description: "Every citizen of Mondstadt adores Barbara. However, she learned the word \"idol\" from a magazine.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -135,6 +138,7 @@ const characters = [
             commonMat: "TH Insignia",
             bossMat: "Dvalin's Sigh"
         },
+        description: "Captain of her crew, The Crux. She's quite an unbound and forthright woman.",
         gender: "Female",
         nation: "Liyue"
     },
@@ -155,6 +159,7 @@ const characters = [
             commonMat: "TH Insignia",
             bossMat: "Dvalin's Plume"
         },
+        description: "A righteous and good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.",
         gender: "Male",
         nation: "Mondstadt"
     },
@@ -175,6 +180,7 @@ const characters = [
             commonMat: "Mask",
             bossMat: "Dvalin's Sigh"
         },
+        description: "A young exorcist from a family of exorcists. He does everything he can to suppress his pure positive energy.",
         gender: "Male",
         nation: "Liyue"
     },
@@ -195,6 +201,7 @@ const characters = [
             commonMat: "Fatui Insignia",
             bossMat: "Dvalin's Plume"
         },
+        description: "The tycoon of a winery empire in Mondstadt, unmatched in every possible way",
         gender: "Male",
         nation: "Mondstadt"
     },
@@ -215,6 +222,7 @@ const characters = [
             commonMat: "Arrow",
             bossMat: "Shard of a Foul Legacy"
         },
+        description: "A young lady who has inherited trace amounts of non-human blood. She is the incredible popular bartender of the Cat's Tail tavern.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -235,6 +243,7 @@ const characters = [
             commonMat: "Arrow",
             bossMat: "Spirit Locket of Boreas"
         },
+        description: "A mysterious girl who calls herself \"Prinzessin der Verurteilung\" and travels with a night raven named Oz.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -255,6 +264,7 @@ const characters = [
             commonMat: "Nectar",
             bossMat: "Shadow of the Warrior"
         },
+        description: "The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins.",
         gender: "Female",
         nation: "Liyue"
     },
@@ -275,6 +285,7 @@ const characters = [
             commonMat: "Nectar",
             bossMat: "Shard of a Foul Legacy"
         },
+        description: "The 77th Director of the Wangsheng Funeral Parlor. She took over the business at a rather young age.",
         gender: "Female",
         nation: "Liyue"
     },
@@ -295,6 +306,7 @@ const characters = [
             commonMat: "Mask",
             bossMat: "Dvalin's Plume"
         },
+        description: "The righteous and rigorous Dandelion Knight, and Acting Grand Master of the Knights of Favonius of Mondstadt.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -315,6 +327,7 @@ const characters = [
             commonMat: "TH Insignia",
             bossMat: "Spirit Locket of Boreas"
         },
+        description: "A thinker in the Knights of Favonius with a somewhat exotic appearance.",
         gender: "Male",
         nation: "Mondstadt"
     },
@@ -335,6 +348,7 @@ const characters = [
             commonMat: "Nectar",
             bossMat: "Ring of Boreas"
         },
+        description: "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis' unilateral approach to policymaking in Liyue ⁠— but in truth, gods admire skeptics such as her quite a lot.",
         gender: "Female",
         nation: "Liyue"
     },
@@ -355,6 +369,7 @@ const characters = [
             commonMat: "Scroll",
             bossMat: "Ring of Boreas"
         },
+        description: "An explosives expert and a regular at the Knights of Favonius' confinement room. Also known as Fleeing Sunlight.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -375,6 +390,7 @@ const characters = [
             commonMat: "Slime",
             bossMat: "Dvalin's Claw"
         },
+        description: "The languid but knowledgeable Librarian of the Knights of Favonius, deemed by Sumeru Academia to be their most distinguished graduate in the past two centuries.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -395,6 +411,7 @@ const characters = [
             commonMat: "Nectar",
             bossMat: "Ring of Boreas"
         },
+        description: "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus\", and who possesses abilities to match the title. Erudite, but prideful.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -415,6 +432,7 @@ const characters = [
             commonMat: "Fatui Insignia",
             bossMat: "Spirit Locket of Boreas"
         },
+        description: "The Tianquan of Liyue Qixing. Her wealth is unsurpassed in all of Teyvat.",
         gender: "Female",
         nation: "Liyue"
     },
@@ -435,6 +453,7 @@ const characters = [
             commonMat: "Mask",
             bossMat: "Dvalin's Claw"
         },
+        description: "A maid who faithfully serves the Knights of Favonius. She dreams of joining their ranks someday.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -455,6 +474,7 @@ const characters = [
             commonMat: "Scroll",
             bossMat: "Tail of Boreas"
         },
+        description: "An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion.",
         gender: "Female",
         nation: "Liyue"
     },
@@ -475,6 +495,7 @@ const characters = [
             commonMat: "Mask",
             bossMat: "Dvalin's Claw"
         },
+        description: "A boy who lives among the wolves in Wolvendom of Mondstadt, away from human civilization. As agile as lightning.",
         gender: "Male",
         nation: "Mondstadt"
     },
@@ -495,6 +516,7 @@ const characters = [
             commonMat: "Nectar",
             bossMat: "Spirit Locket of Boreas"
         },
+        description: "An alchemist filled with curiosity about all things. She researches bio-alchemy.",
         gender: "Female",
         nation: "Mondstadt"
     },
@@ -515,6 +537,7 @@ const characters = [
             commonMat: "Fatui Insignia",
             bossMat: "Shard of a Foul Legacy"
         },
+        description: "No. 11 of The Harbingers, also known as \"Childe\". His name is highly feared on the battlefield.",
         gender: "Male",
         nation: "Snezhnaya"
     },
@@ -535,6 +558,7 @@ const characters = [
             commonMat: "Slime",
             bossMat: "Tail of Boreas"
         },
+        description: "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.",
         gender: "Male",
         nation: "Mondstadt"
     },
@@ -555,6 +579,7 @@ const characters = [
             commonMat: "Slime",
             bossMat: "Dvalin's Claw"
         },
+        description: "A renowned chef from Liyue. She's extremely passionate about cooking and excels at making her signature hot and spicy dishes.",
         gender: "Female",
         nation: "Liyue"
     },
@@ -575,6 +600,7 @@ const characters = [
             commonMat: "Slime",
             bossMat: "Shadow of the Warrior"
         },
+        description: "A yaksha adeptus who defends Liyue. Also heralded as the \"Conquerer of Demons\" and \"Vigilant Yaksha\".",
         gender: "Male",
         nation: "Liyue"
     },
@@ -595,6 +621,7 @@ const characters = [
             commonMat: "Mask",
             bossMat: "Tail of Boreas"
         },
+        description: "A young man carrying a longsword who is frequently seen at book booths. He has a heart of gold and yearns for justice and fairness for all.",
         gender: "Male",
         nation: "Liyue"
     },
@@ -615,6 +642,7 @@ const characters = [
             commonMat: "TH Insignia",
             bossMat: "Tusk of Monoceros Caeli"
         },
+        description: "Liyue's sole rock 'n' roll musician. She rebels against ossified prejudices using her music and passionate singing.", 
         gender: "Female",
         nation: "Liyue"
     },
@@ -635,6 +663,7 @@ const characters = [
             commonMat: "Slime",
             bossMat: "Tusk of Monoceros Caeli"
         },
+        description: "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.",
         gender: "Male",
         nation: "Liyue"
     }
