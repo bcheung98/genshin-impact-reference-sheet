@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 
+// Ascension Gems
+import anemoGem from "../assets/materials/ascension_gems/Anemo_Gemstone.png";
+import cryoGem from "../assets/materials/ascension_gems/Cryo_Gemstone.png";
+import electroGem from "../assets/materials/ascension_gems/Electro_Gemstone.png";
+import geoGem from "../assets/materials/ascension_gems/Geo_Gemstone.png";
+import hydroGem from "../assets/materials/ascension_gems/Hydro_Gemstone.png";
+import pyroGem from "../assets/materials/ascension_gems/Pyro_Gemstone.png";
+
 // Ascension Materials
 import basaltPillar from "../assets/materials/ascension_mats/Basalt_Pillar.png";
 import cleansingHeart from "../assets/materials/ascension_mats/Cleansing_Heart.png";
@@ -54,6 +62,15 @@ import ballad from "../assets/materials/talent_mats/Ballad.png";
 import prosperity from "../assets/materials/talent_mats/Prosperity.png";
 import diligence from "../assets/materials/talent_mats/Diligence.png";
 import gold from "../assets/materials/talent_mats/Gold.png";
+
+const ascensionGemsMap = {
+    "Anemo": anemoGem,
+    "Cryo": cryoGem,
+    "Electro": electroGem,
+    "Geo": geoGem,
+    "Hydro": hydroGem,
+    "Pyro": pyroGem
+};
 
 const ascensionMatsMap = {
     "Basalt Pillar": basaltPillar,
@@ -125,6 +142,7 @@ class CharCardBack extends Component {
                 <div>
                     <img className="material-img-back" src={talentMatsMap[talents]}/>
                     <img className="material-img-back" src={ascensionMatsMap[ascensionMat]}/>
+                    <img className="material-img-back" src={ascensionGemsMap[char.element]} />
                     <img className="material-img-back" src={localSpecialtiesMap[localMat]}/>
                     <img className="material-img-back" src={commonMatsMap[commonMat]}/>
                     <img className="material-img-back" src={bossMatsMap[bossMat]}/>
