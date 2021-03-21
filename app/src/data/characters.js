@@ -17,7 +17,9 @@ import dionaAvatar from "../assets/avatars/Character_Diona_Avatar.png";
 import fischlCard from "../assets/cards/Character_Fischl_Card.png";
 import fischlAvatar from "../assets/avatars/Character_Fischl_Avatar.png";
 import ganyuCard from "../assets/cards/Character_Ganyu_Card.png";
+import ganyuAvatar from "../assets/avatars/Character_Ganyu_Avatar.png";
 import hutaoCard from "../assets/cards/Character_Hu_Tao_Card.png";
+import hutaoAvatar from "../assets/avatars/Character_Hu_Tao_Avatar.png";
 import jeanCard from "../assets/cards/Character_Jean_Card.png";
 import jeanAvatar from "../assets/avatars/Character_Jean_Avatar.png";
 import kaeyaCard from "../assets/cards/Character_Kaeya_Card.png";
@@ -47,6 +49,7 @@ import ventiAvatar from "../assets/avatars/Character_Venti_Avatar.png";
 import xianglingCard from "../assets/cards/Character_Xiangling_Card.png";
 import xianglingAvatar from "../assets/avatars/Character_Xiangling_Avatar.png";
 import xiaoCard from "../assets/cards/Character_Xiao_Card.png";
+import xiaoAvatar from "../assets/avatars/Character_Xiao_Avatar.png";
 import xingqiuCard from "../assets/cards/Character_Xingqiu_Card.png";
 import xingqiuAvatar from "../assets/avatars/Character_Xingqiu_Avatar.png";
 import xinyanCard from "../assets/cards/Character_Xinyan_Card.png";
@@ -241,6 +244,7 @@ const characters = [
         rarity: 5,
         images: {
             card: ganyuCard,
+            avatar: ganyuAvatar
         },
         element: "Cryo",
         weapon: "Bow",
@@ -259,7 +263,8 @@ const characters = [
         title: "Fragrance in Thaw",
         rarity: 5,
         images: {
-            card: hutaoCard
+            card: hutaoCard,
+            avatar: hutaoAvatar
         },
         element: "Pyro",
         weapon: "Polearm",
@@ -558,7 +563,8 @@ const characters = [
         title: "Vigilant Yaksha",
         rarity: 5,
         images: {
-            card: xiaoCard
+            card: xiaoCard,
+            avatar: xiaoAvatar
         },
         element: "Anemo",
         weapon: "Polearm",
