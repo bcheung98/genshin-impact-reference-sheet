@@ -101,7 +101,7 @@ const commonMatsMap = {
     "Nectar": nectar,
     "Scroll": scroll,
     "Slime": slime,
-    "TH Insignia": thInsignia
+    "Treasure Hoarder Insignia": thInsignia
 };
 
 const localSpecialtiesMap = {
@@ -139,13 +139,31 @@ class CharCardBack extends Component {
         let { talents, ascensionMat, localMat, commonMat, bossMat } = char.materials;
         return (
             <div id={`${char.name}-back`} className="char-card-back" onClick={() => this.props.flipCardFromBack(this.props.char)} >
-                <div>
-                    <img className="material-img-back" src={talentMatsMap[talents]} alt={talents} />
-                    <img className="material-img-back" src={ascensionMatsMap[ascensionMat]} alt={ascensionMat} />
-                    <img className="material-img-back" src={ascensionGemsMap[char.element]} alt={char.element} />
-                    <img className="material-img-back" src={localSpecialtiesMap[localMat]} alt={localMat} />
-                    <img className="material-img-back" src={commonMatsMap[commonMat]} alt={commonMat} />
-                    <img className="material-img-back" src={bossMatsMap[bossMat]} alt={bossMat} />
+                <div className="materials">
+                    <div className="material-container">
+                        <p className="material-tooltip">{talents}</p>
+                        <img className="material-img-back" src={talentMatsMap[talents]} alt={talents} />
+                    </div>
+                    <div className="material-container">
+                        <p className="material-tooltip">{ascensionMat}</p>
+                        <img className="material-img-back" src={ascensionMatsMap[ascensionMat]} alt={ascensionMat} />
+                    </div>
+                    <div className="material-container">
+                        <p className="material-tooltip">{char.element} Gemstone</p>
+                        <img className="material-img-back" src={ascensionGemsMap[char.element]} alt={char.element} />
+                    </div>
+                    <div className="material-container">
+                        <p className="material-tooltip">{localMat}</p>
+                        <img className="material-img-back" src={localSpecialtiesMap[localMat]} alt={localMat} />
+                    </div>
+                    <div className="material-container">
+                        <p className="material-tooltip">{commonMat}</p>
+                        <img className="material-img-back" src={commonMatsMap[commonMat]} alt={commonMat} />
+                    </div>
+                    <div className="material-container">
+                        <p className="material-tooltip">{bossMat}</p>
+                        <img className="material-img-back" src={bossMatsMap[bossMat]} alt={bossMat} />
+                    </div>      
                 </div>
             </div>
         )

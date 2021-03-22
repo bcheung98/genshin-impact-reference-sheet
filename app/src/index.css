@@ -39,6 +39,31 @@ code {
     height: 25px;
 }
 
+.materials {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.material-container {
+    margin: 5px;
+}
+
+.material-container .material-tooltip {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #bbb;
+    padding: 5px;
+    margin-top: -30px;
+}
+
+.material-container:hover .material-tooltip {
+    visibility: visible;
+}
+
+
 .material-img-back {
     border: 2px solid gray;
     border-radius: 15px;

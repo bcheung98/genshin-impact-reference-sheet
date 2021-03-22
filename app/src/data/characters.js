@@ -135,7 +135,7 @@ const characters = [
             talents: "Gold",
             ascensionMat: "Lightning Prism",
             localMat: "Noctilucous Jade",
-            commonMat: "TH Insignia",
+            commonMat: "Treasure Hoarder Insignia",
             bossMat: "Dvalin's Sigh"
         },
         description: "Captain of her crew, The Crux. She's quite an unbound and forthright woman.",
@@ -156,7 +156,7 @@ const characters = [
             talents: "Resistance",
             ascensionMat: "Everflame Seed",
             localMat: "Windwheel Aster",
-            commonMat: "TH Insignia",
+            commonMat: "Treasure Hoarder Insignia",
             bossMat: "Dvalin's Plume"
         },
         description: "A righteous and good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.",
@@ -324,7 +324,7 @@ const characters = [
             talents: "Ballad",
             ascensionMat: "Hoarfrost Core",
             localMat: "Calla Lily",
-            commonMat: "TH Insignia",
+            commonMat: "Treasure Hoarder Insignia",
             bossMat: "Spirit Locket of Boreas"
         },
         description: "A thinker in the Knights of Favonius with a somewhat exotic appearance.",
@@ -639,7 +639,7 @@ const characters = [
             talents: "Gold",
             ascensionMat: "Everflame Seed",
             localMat: "Violetgrass",
-            commonMat: "TH Insignia",
+            commonMat: "Treasure Hoarder Insignia",
             bossMat: "Tusk of Monoceros Caeli"
         },
         description: "Liyue's sole rock 'n' roll musician. She rebels against ossified prejudices using her music and passionate singing.", 
