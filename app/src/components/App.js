@@ -6,14 +6,20 @@ import characters from "../data/characters";
 class App extends Component {
 
     state = {
-        chars: characters,
+        chars: [],
         filters: {
             rarity: "all",
-            element: "all",
-            weapon: "all",
-            gender: "all",
-            nation: "all"
+            element: [],
+            weapon: [],
+            gender: [],
+            nation: []
         }
+    }
+
+    componentDidMount() {
+        this.setState({
+            chars: characters
+        });
     }
 
     render() {

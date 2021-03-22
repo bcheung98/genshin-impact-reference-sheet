@@ -63,7 +63,7 @@ class CharCardFront extends Component {
                 <div className="char-title">
                     {title}
                 </div>
-                <img src={images.card} alt={name} />
+                <img src={(images.card)} alt={name} />
                 <img className="nation-img" src={nationMap[nation]} alt={nation} />
                 <div className="char-desc">
                     {description}
