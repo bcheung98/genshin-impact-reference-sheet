@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+.char-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: -200px;
+}
+
 .char-card {
     width: 285px;
     height: 870px; 
