@@ -72,11 +72,19 @@ class App extends Component {
 
     filterCharacters = () => {
         let result = [...this.state.allChars];
-        let elementFilter = result.filter(char => this.state.filters.element.includes(char.element));
-        elementFilter.length === 0 ? result = [...this.state.allChars] : result = elementFilter; 
-        let weaponFilter = result.filter(char => this.state.filters.weapon.includes(char.weapon));
-        weaponFilter.length === 0 ? result = [...this.state.allChars] : result = weaponFilter; 
-        result.length > 0 ? this.setState({displayedChars: result}) : this.setState({displayedChars: characters});
+        let elementFilter = "";
+        let weaponFilter = "";
+        if (this.state.filters.element.length > 0) {
+            elementFilter = result.filter(char => this.state.filters.element.includes(char.element));
+            console.log(elementFilter);
+            result = elementFilter;
+        }
+        if (this.state.filters.weapon.length > 0) {
+            weaponFilter = result.filter(char => this.state.filters.weapon.includes(char.weapon));
+            console.log(weaponFilter);
+            result = weaponFilter;
+        }
+        this.setState({ displayedChars: result });
     }
 
     render() {
