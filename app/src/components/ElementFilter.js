@@ -4,12 +4,12 @@ class ElementFilter extends Component {
     render() {
         return (
             <div>
-                <input className="element-filter" type="checkbox" value="Pyro" onChange={this.props.setElementFilters} /> Pyro 
-                <input className="element-filter" type="checkbox" value="Hydro" onChange={this.props.setElementFilters} /> Hydro
-                <input className="element-filter" type="checkbox" value="Electro" onChange={this.props.setElementFilters} /> Electro 
-                <input className="element-filter" type="checkbox" value="Cryo" onChange={this.props.setElementFilters} /> Cryo
-                <input className="element-filter" type="checkbox" value="Anemo" onChange={this.props.setElementFilters} /> Anemo
-                <input className="element-filter" type="checkbox" value="Geo" onChange={this.props.setElementFilters} /> Geo
+                <img className="filter-off" id="pyro-button" src={require("../assets/elements/Element_Pyro.png").default} alt="Pyro" onClick={this.props.setElementFilters} />
+                <img className="filter-off" id="hydro-button" src={require("../assets/elements/Element_Hydro.png").default} alt="Hydro" onClick={this.props.setElementFilters} /> 
+                <img className="filter-off" id="electro-button" src={require("../assets/elements/Element_Electro.png").default} alt="Electro" onClick={this.props.setElementFilters} />  
+                <img className="filter-off" id="cryo-button" src={require("../assets/elements/Element_Cryo.png").default} alt="Cryo" onClick={this.props.setElementFilters} /> 
+                <img className="filter-off" id="anemo-button" src={require("../assets/elements/Element_Anemo.png").default} alt="Anemo" onClick={this.props.setElementFilters} /> 
+                <img className="filter-off" id="geo-button" src={require("../assets/elements/Element_Geo.png").default} alt="Geo" onClick={this.props.setElementFilters} /> 
             </div>
         )
     }

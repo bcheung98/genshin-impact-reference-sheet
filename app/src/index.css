@@ -12,8 +12,12 @@ code {
     monospace;
 }
 
-.element-filter, .weapon-filter {
-    margin-left: 10px;
+.filter-off {
+    opacity: 0.2;
+}
+
+.filter-on {
+    opacity: 1;
 }
 
 .char-container {
