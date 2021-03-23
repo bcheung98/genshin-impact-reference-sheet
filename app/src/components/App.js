@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
 import ElementFilter from "./ElementFilter";
+import WeaponFilter from "./WeaponFilter";
 import CharBrowser from "./CharBrowser";
 import characters from "../data/characters";
 
@@ -32,7 +33,7 @@ class App extends Component {
                     ...this.state.filters,
                     element: [...this.state.filters.element, e.target.value]
                 }
-            }, () => this.filterByElement());
+            }, () => this.filterCharacters());
         }
         else {
             let temp = [...this.state.filters.element];
@@ -43,14 +44,38 @@ class App extends Component {
                     ...this.state.filters,
                     element: temp
                 }
-            }, () => this.filterByElement());
+            }, () => this.filterCharacters());
         }
     }
 
-    filterByElement = () => {
-        console.log(this.state.filters.element, this.state.displayedChars);
-        let result = [...this.state.allChars].filter(char => this.state.filters.element.includes(char.element.toLowerCase()));
-        console.log(result);
+    setWeaponFilters = (e) => {
+        if (!this.state.filters.weapon.includes(e.target.value)) {
+            this.setState({
+                filters: {
+                    ...this.state.filters,
+                    weapon: [...this.state.filters.weapon, e.target.value]
+                }
+            }, () => this.filterCharacters());
+        }
+        else {
+            let temp = [...this.state.filters.weapon];
+            let idx = temp.indexOf(e.target.value);
+            temp.splice(idx, 1);
+            this.setState({
+                filters: {
+                    ...this.state.filters,
+                    weapon: temp
+                }
+            }, () => this.filterCharacters());
+        }
+    }
+
+    filterCharacters = () => {
+        let result = [...this.state.allChars];
+        let elementFilter = result.filter(char => this.state.filters.element.includes(char.element));
+        elementFilter.length === 0 ? result = [...this.state.allChars] : result = elementFilter; 
+        let weaponFilter = result.filter(char => this.state.filters.weapon.includes(char.weapon));
+        weaponFilter.length === 0 ? result = [...this.state.allChars] : result = weaponFilter; 
         result.length > 0 ? this.setState({displayedChars: result}) : this.setState({displayedChars: characters});
     }
 
@@ -63,6 +88,7 @@ class App extends Component {
                 <div className="ui container">
                     <div className="ui hidden section divider"></div>
                     <ElementFilter setElementFilters={this.setElementFilters} />
+                    <WeaponFilter setWeaponFilters={this.setWeaponFilters} />
                     <CharBrowser chars={this.state.displayedChars} />
                 </div>
             </div>

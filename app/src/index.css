@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.element-filter {
+.element-filter, .weapon-filter {
     margin-left: 10px;
 }
 
