@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import anemo from "../assets/elements/Element_Anemo.png";
 import cryo from "../assets/elements/Element_Cryo.png";
@@ -46,31 +46,28 @@ const nationMap = {
     "Liyue": liyue
 };
 
-class CharCardFront extends Component {
-
-    render() {
-        let { name, title, rarity, images, element, weapon, description, nation } = this.props.char;
-        return (
-            <div id={`${name}-front`} className="char-card-front" onClick={() => this.props.flipCardFromFront(this.props.char)}>
+const CharCardFront = (props) => {
+    let { name, title, rarity, images, element, weapon, description, nation } = props.char;
+    return (
+        <div id={`${name}-front`} className="char-card-front" onClick={() => props.flipCardFromFront(props.char)}>
+            <div>
+                <h1>{name}</h1>
+                <img className="rating-img" src={starMap[rarity]} alt={rarity} />
                 <div>
-                    <h1>{name}</h1>
-                    <img className="rating-img" src={starMap[rarity]} alt={rarity} />
-                    <div>
-                        <img src={elementMap[element]} alt={element} />
-                        <img src={weaponMap[weapon]} alt={weapon} />
-                    </div>
-                </div>
-                <div className="char-title">
-                    {title}
-                </div>
-                <img src={(images.card)} alt={name} />
-                <img className="nation-img" src={nationMap[nation]} alt={nation} />
-                <div className="char-desc">
-                    {description}
+                    <img src={elementMap[element]} alt={element} />
+                    <img src={weaponMap[weapon]} alt={weapon} />
                 </div>
             </div>
-        )
-    }
+            <div className="char-title">
+                {title}
+            </div>
+            <img src={(images.card)} alt={name} />
+            <img className="nation-img" src={nationMap[nation]} alt={nation} />
+            <div className="char-desc">
+                {description}
+            </div>
+        </div>
+    )
 }
 
 export default CharCardFront;

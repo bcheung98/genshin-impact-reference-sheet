@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 // Ascension Gems
 import anemoGem from "../assets/materials/ascension_gems/Anemo_Gemstone.png";
@@ -132,42 +132,39 @@ const talentMatsMap = {
     "Gold": gold
 };
 
-class CharCardBack extends Component {
-
-    render() {
-        let { char } = this.props
-        let { talents, ascensionMat, localMat, commonMat, bossMat } = char.materials;
-        return (
-            <div id={`${char.name}-back`} className="char-card-back" onClick={() => this.props.flipCardFromBack(this.props.char)} >
-                <div className="materials">
-                    <div className="material-container">
-                        <p className="material-tooltip">{talents}</p>
-                        <img className="material-img-back" src={talentMatsMap[talents]} alt={talents} />
-                    </div>
-                    <div className="material-container">
-                        <p className="material-tooltip">{ascensionMat}</p>
-                        <img className="material-img-back" src={ascensionMatsMap[ascensionMat]} alt={ascensionMat} />
-                    </div>
-                    <div className="material-container">
-                        <p className="material-tooltip">{char.element} Gemstone</p>
-                        <img className="material-img-back" src={ascensionGemsMap[char.element]} alt={char.element} />
-                    </div>
-                    <div className="material-container">
-                        <p className="material-tooltip">{localMat}</p>
-                        <img className="material-img-back" src={localSpecialtiesMap[localMat]} alt={localMat} />
-                    </div>
-                    <div className="material-container">
-                        <p className="material-tooltip">{commonMat}</p>
-                        <img className="material-img-back" src={commonMatsMap[commonMat]} alt={commonMat} />
-                    </div>
-                    <div className="material-container">
-                        <p className="material-tooltip">{bossMat}</p>
-                        <img className="material-img-back" src={bossMatsMap[bossMat]} alt={bossMat} />
-                    </div>      
+const CharCardBack = (props) => {
+    let { char } = props
+    let { talents, ascensionMat, localMat, commonMat, bossMat } = char.materials;
+    return (
+        <div id={`${char.name}-back`} className="char-card-back" onClick={() => props.flipCardFromBack(props.char)} >
+            <div className="materials">
+                <div className="material-container">
+                    <p className="material-tooltip">{talents}</p>
+                    <img className="material-img-back" src={talentMatsMap[talents]} alt={talents} />
+                </div>
+                <div className="material-container">
+                    <p className="material-tooltip">{ascensionMat}</p>
+                    <img className="material-img-back" src={ascensionMatsMap[ascensionMat]} alt={ascensionMat} />
+                </div>
+                <div className="material-container">
+                    <p className="material-tooltip">{char.element} Gemstone</p>
+                    <img className="material-img-back" src={ascensionGemsMap[char.element]} alt={char.element} />
+                </div>
+                <div className="material-container">
+                    <p className="material-tooltip">{localMat}</p>
+                    <img className="material-img-back" src={localSpecialtiesMap[localMat]} alt={localMat} />
+                </div>
+                <div className="material-container">
+                    <p className="material-tooltip">{commonMat}</p>
+                    <img className="material-img-back" src={commonMatsMap[commonMat]} alt={commonMat} />
+                </div>
+                <div className="material-container">
+                    <p className="material-tooltip">{bossMat}</p>
+                    <img className="material-img-back" src={bossMatsMap[bossMat]} alt={bossMat} />
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default CharCardBack;

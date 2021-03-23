@@ -23,7 +23,7 @@ class App extends Component {
 
     setElementFilters = (e) => {
         let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
-        button.className == "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
+        button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
         let temp = [...this.state.filters.element];
         !this.state.filters.element.includes(e.target.alt) ? temp.push(e.target.alt) : temp.splice(temp.indexOf(e.target.alt), 1);
         this.setState({
@@ -36,7 +36,7 @@ class App extends Component {
 
     setWeaponFilters = (e) => {
         let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
-        button.className == "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
+        button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
         let temp = [...this.state.filters.weapon];
         !this.state.filters.weapon.includes(e.target.alt) ? temp.push(e.target.alt) : temp.splice(temp.indexOf(e.target.alt), 1);
         this.setState({
@@ -65,7 +65,6 @@ class App extends Component {
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
                 <div className="ui container">
-                    <div className="ui hidden section divider"></div>
                     <div className="filter-bar">
                         <ElementFilter setElementFilters={this.setElementFilters} />
                         <WeaponFilter setWeaponFilters={this.setWeaponFilters} />
