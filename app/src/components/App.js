@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
+import ElementFilter from "./ElementFilter";
 import CharBrowser from "./CharBrowser";
 import characters from "../data/characters";
 
@@ -22,6 +23,28 @@ class App extends Component {
         });
     }
 
+    setElementFilters = (e) => {
+        if (!this.state.filters.element.includes(e.target.value)) {
+            this.setState({
+                filters: {
+                    ...this.state.filters,
+                    element: [...this.state.filters.element, e.target.value]
+                }
+            });
+        }
+        else {
+            let temp = [...this.state.filters.element];
+            let idx = temp.indexOf(e.target.value);
+            temp.splice(idx, 1);
+            this.setState({
+                filters: {
+                    ...this.state.filters,
+                    element: temp
+                }
+            });
+        }
+    }
+
     render() {
         return (
             <div className="ui container">
@@ -30,9 +53,8 @@ class App extends Component {
                 </header>
                 <div className="ui container">
                     <div className="ui hidden section divider"></div>
-                    <div>
-                        <CharBrowser chars={this.state.chars} />
-                    </div>
+                    <ElementFilter setElementFilters={this.setElementFilters}/>
+                    <CharBrowser chars={this.state.chars} />
                 </div>
             </div>
         )

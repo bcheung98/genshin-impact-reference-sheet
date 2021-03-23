@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.element-filter {
+    margin-left: 10px;
+}
+
 .char-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
