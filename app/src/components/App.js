@@ -7,7 +7,8 @@ import characters from "../data/characters";
 class App extends Component {
 
     state = {
-        chars: [],
+        allChars: [],
+        displayedChars: [],
         filters: {
             rarity: "all",
             element: [],
@@ -19,7 +20,8 @@ class App extends Component {
 
     componentDidMount() {
         this.setState({
-            chars: characters
+            allChars: characters,
+            displayedChars: characters
         });
     }
 
@@ -30,7 +32,7 @@ class App extends Component {
                     ...this.state.filters,
                     element: [...this.state.filters.element, e.target.value]
                 }
-            });
+            }, () => this.filterByElement());
         }
         else {
             let temp = [...this.state.filters.element];
@@ -41,8 +43,15 @@ class App extends Component {
                     ...this.state.filters,
                     element: temp
                 }
-            });
+            }, () => this.filterByElement());
         }
+    }
+
+    filterByElement = () => {
+        console.log(this.state.filters.element, this.state.displayedChars);
+        let result = [...this.state.allChars].filter(char => this.state.filters.element.includes(char.element.toLowerCase()));
+        console.log(result);
+        result.length > 0 ? this.setState({displayedChars: result}) : this.setState({displayedChars: characters});
     }
 
     render() {
@@ -53,8 +62,8 @@ class App extends Component {
                 </header>
                 <div className="ui container">
                     <div className="ui hidden section divider"></div>
-                    <ElementFilter setElementFilters={this.setElementFilters}/>
-                    <CharBrowser chars={this.state.chars} />
+                    <ElementFilter setElementFilters={this.setElementFilters} />
+                    <CharBrowser chars={this.state.displayedChars} />
                 </div>
             </div>
         )
