@@ -8,8 +8,7 @@ import characters from "../data/characters";
 class App extends Component {
 
     state = {
-        allChars: [],
-        displayedChars: [],
+        chars: [],
         filters: {
             rarity: "all",
             element: [],
@@ -21,70 +20,41 @@ class App extends Component {
 
     componentDidMount() {
         this.setState({
-            allChars: characters,
-            displayedChars: characters
+            chars: characters
         });
     }
 
     setElementFilters = (e) => {
-        if (!this.state.filters.element.includes(e.target.value)) {
-            this.setState({
-                filters: {
-                    ...this.state.filters,
-                    element: [...this.state.filters.element, e.target.value]
-                }
-            }, () => this.filterCharacters());
-        }
-        else {
-            let temp = [...this.state.filters.element];
-            let idx = temp.indexOf(e.target.value);
-            temp.splice(idx, 1);
-            this.setState({
-                filters: {
-                    ...this.state.filters,
-                    element: temp
-                }
-            }, () => this.filterCharacters());
-        }
+        let temp = [...this.state.filters.element];
+        !this.state.filters.element.includes(e.target.value) ? temp.push(e.target.value) : temp.splice(temp.indexOf(e.target.value), 1);
+        this.setState({
+            filters: {
+                ...this.state.filters,
+                element: temp
+            }
+        }, () => this.filterCharacters());
     }
 
     setWeaponFilters = (e) => {
-        if (!this.state.filters.weapon.includes(e.target.value)) {
-            this.setState({
-                filters: {
-                    ...this.state.filters,
-                    weapon: [...this.state.filters.weapon, e.target.value]
-                }
-            }, () => this.filterCharacters());
-        }
-        else {
-            let temp = [...this.state.filters.weapon];
-            let idx = temp.indexOf(e.target.value);
-            temp.splice(idx, 1);
-            this.setState({
-                filters: {
-                    ...this.state.filters,
-                    weapon: temp
-                }
-            }, () => this.filterCharacters());
-        }
+        let temp = [...this.state.filters.weapon];
+        !this.state.filters.weapon.includes(e.target.value) ? temp.push(e.target.value) : temp.splice(temp.indexOf(e.target.value), 1);
+        this.setState({
+            filters: {
+                ...this.state.filters,
+                weapon: temp
+            }
+        }, () => this.filterCharacters());
     }
 
     filterCharacters = () => {
-        let result = [...this.state.allChars];
-        let elementFilter = "";
-        let weaponFilter = "";
+        let chars = [...characters];
         if (this.state.filters.element.length > 0) {
-            elementFilter = result.filter(char => this.state.filters.element.includes(char.element));
-            console.log(elementFilter);
-            result = elementFilter;
+            chars = chars.filter(char => this.state.filters.element.includes(char.element));
         }
         if (this.state.filters.weapon.length > 0) {
-            weaponFilter = result.filter(char => this.state.filters.weapon.includes(char.weapon));
-            console.log(weaponFilter);
-            result = weaponFilter;
+            chars = chars.filter(char => this.state.filters.weapon.includes(char.weapon));
         }
-        this.setState({ displayedChars: result });
+        this.setState({ chars });
     }
 
     render() {
@@ -97,7 +67,7 @@ class App extends Component {
                     <div className="ui hidden section divider"></div>
                     <ElementFilter setElementFilters={this.setElementFilters} />
                     <WeaponFilter setWeaponFilters={this.setWeaponFilters} />
-                    <CharBrowser chars={this.state.displayedChars} />
+                    <CharBrowser chars={this.state.chars} />
                 </div>
             </div>
         )
