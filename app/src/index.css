@@ -12,11 +12,29 @@ code {
     monospace;
 }
 
+.filter-bar {
+    display: flex;
+}
+
+.filter {
+    margin-right: 64px;
+}
+
+.filter-off, .filter-on {
+    width: 64px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
 .filter-off {
-    opacity: 0.2;
+    background-color: rgb(32, 32, 32);
+    opacity: 0.5;
 }
 
 .filter-on {
+    background-color: dodgerblue;
     opacity: 1;
 }
 

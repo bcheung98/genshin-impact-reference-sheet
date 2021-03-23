@@ -10,11 +10,8 @@ class App extends Component {
     state = {
         chars: [],
         filters: {
-            rarity: "all",
             element: [],
-            weapon: [],
-            gender: [],
-            nation: []
+            weapon: []
         }
     }
 
@@ -69,8 +66,10 @@ class App extends Component {
                 </header>
                 <div className="ui container">
                     <div className="ui hidden section divider"></div>
-                    <ElementFilter setElementFilters={this.setElementFilters} />
-                    <WeaponFilter setWeaponFilters={this.setWeaponFilters} />
+                    <div className="filter-bar">
+                        <ElementFilter setElementFilters={this.setElementFilters} />
+                        <WeaponFilter setWeaponFilters={this.setWeaponFilters} />
+                    </div>
                     <CharBrowser chars={this.state.chars} />
                 </div>
             </div>
