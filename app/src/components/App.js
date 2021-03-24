@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
 import ElementFilter from "./ElementFilter";
 import WeaponFilter from "./WeaponFilter";
+import TalentFilter from "./TalentFilter";
 import CharBrowser from "./CharBrowser";
 import characters from "../data/characters";
 
@@ -11,7 +12,8 @@ class App extends Component {
         chars: [],
         filters: {
             element: [],
-            weapon: []
+            weapon: [],
+            talent: []
         }
     }
 
@@ -47,6 +49,19 @@ class App extends Component {
         }, () => this.filterCharacters());
     }
 
+    setTalentFilters = (e) => {
+        let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
+        button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
+        let temp = [...this.state.filters.talent];
+        !this.state.filters.talent.includes(e.target.alt) ? temp.push(e.target.alt) : temp.splice(temp.indexOf(e.target.alt), 1);
+        this.setState({
+            filters: {
+                ...this.state.filters,
+                talent: temp
+            }
+        }, () => this.filterCharacters());
+    }
+
     filterCharacters = () => {
         let chars = [...characters];
         if (this.state.filters.element.length > 0) {
@@ -54,6 +69,9 @@ class App extends Component {
         }
         if (this.state.filters.weapon.length > 0) {
             chars = chars.filter(char => this.state.filters.weapon.includes(char.weapon));
+        }
+        if (this.state.filters.talent.length > 0) {
+            chars = chars.filter(char => this.state.filters.talent.includes(char.materials.talents));
         }
         this.setState({ chars });
     }
@@ -66,8 +84,11 @@ class App extends Component {
                 </header>
                 <div className="ui container">
                     <div className="filter-bar">
-                        <ElementFilter setElementFilters={this.setElementFilters} />
-                        <WeaponFilter setWeaponFilters={this.setWeaponFilters} />
+                        <ElementFilter setFilters={this.setElementFilters} />
+                        <WeaponFilter setFilters={this.setWeaponFilters} />
+                    </div>
+                    <div className="filter-bar">
+                        <TalentFilter setFilters={this.setTalentFilters} />
                     </div>
                     <CharBrowser chars={this.state.chars} />
                 </div>
