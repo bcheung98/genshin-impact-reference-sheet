@@ -3,6 +3,7 @@ import "semantic-ui-css/semantic.min.css";
 import ElementFilter from "./ElementFilter";
 import WeaponFilter from "./WeaponFilter";
 import TalentFilter from "./TalentFilter";
+import BossMatFilter from "./BossMatFilter";
 import CharBrowser from "./CharBrowser";
 import characters from "../data/characters";
 
@@ -13,7 +14,8 @@ class App extends Component {
         filters: {
             element: [],
             weapon: [],
-            talent: []
+            talent: [],
+            bossMat: []
         }
     }
 
@@ -62,6 +64,19 @@ class App extends Component {
         }, () => this.filterCharacters());
     }
 
+    setBossMatFilters = (e) => {
+        let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
+        button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
+        let temp = [...this.state.filters.bossMat];
+        !this.state.filters.bossMat.includes(e.target.alt) ? temp.push(e.target.alt) : temp.splice(temp.indexOf(e.target.alt), 1);
+        this.setState({
+            filters: {
+                ...this.state.filters,
+                bossMat: temp
+            }
+        }, () => this.filterCharacters());
+    }
+
     filterCharacters = () => {
         let chars = [...characters];
         if (this.state.filters.element.length > 0) {
@@ -72,6 +87,9 @@ class App extends Component {
         }
         if (this.state.filters.talent.length > 0) {
             chars = chars.filter(char => this.state.filters.talent.includes(char.materials.talents));
+        }
+        if (this.state.filters.bossMat.length > 0) {
+            chars = chars.filter(char => this.state.filters.bossMat.includes(char.materials.bossMat));
         }
         this.setState({ chars });
     }
@@ -90,8 +108,11 @@ class App extends Component {
                     <div className="filter-bar">
                         <TalentFilter setFilters={this.setTalentFilters} />
                     </div>
-                    <CharBrowser chars={this.state.chars} />
+                    <div className="filter-bar">
+                        <BossMatFilter setFilters={this.setBossMatFilters} />
+                    </div>
                 </div>
+                <CharBrowser chars={this.state.chars} />
             </div>
         )
     }
