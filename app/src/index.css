@@ -34,6 +34,10 @@ code {
     opacity: 0.5;
 }
 
+.filter-off:hover, .filter-on:hover {
+    box-shadow: 0 0 2px 1px dodgerblue;
+}
+
 .filter-on {
     background-color: dodgerblue;
     opacity: 1;

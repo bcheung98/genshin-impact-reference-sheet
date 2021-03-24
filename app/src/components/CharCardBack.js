@@ -132,6 +132,24 @@ const talentMatsMap = {
     "Gold": gold
 };
 
+const formatTalents = (talent) => {
+    switch (talent) {
+        case "Freedom":
+        case "Prosperity":
+            talent += " (Mon/Thu)";
+            break;
+        case "Resistance":
+        case "Diligence":
+            talent += " (Tue/Fri)"
+            break;
+        case "Ballad":
+        case "Gold":
+            talent += " (Wed/Sat)"
+            break;
+    }
+    return talent;
+}
+
 const CharCardBack = (props) => {
     let { char } = props
     let { talents, ascensionMat, localMat, commonMat, bossMat } = char.materials;
@@ -139,7 +157,7 @@ const CharCardBack = (props) => {
         <div id={`${char.name}-back`} className="char-card-back" onClick={() => props.flipCardFromBack(props.char)} >
             <div className="materials">
                 <div className="material-container">
-                    <p className="material-tooltip">{talents}</p>
+                    <p className="material-tooltip">{formatTalents(talents)}</p>
                     <img className="material-img-back" src={talentMatsMap[talents]} alt={talents} />
                 </div>
                 <div className="material-container">
