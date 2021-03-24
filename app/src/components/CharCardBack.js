@@ -146,6 +146,8 @@ const formatTalents = (talent) => {
         case "Gold":
             talent += " (Wed/Sat)"
             break;
+        default:
+            talent += "";
     }
     return talent;
 }
