@@ -132,7 +132,7 @@ const talentMatsMap = {
     "Gold": gold
 };
 
-const formatTalents = (talent) => {
+export const formatTalents = (talent) => {
     switch (talent) {
         case "Freedom":
         case "Prosperity":
