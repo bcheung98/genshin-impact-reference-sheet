@@ -12,12 +12,13 @@ code {
     monospace;
 }
 
-.filter-bar {
-    display: flex;
+.filter-container {
+    margin-bottom: 20px;
 }
 
-.filter {
-    margin-right: 64px;
+.filter-bar {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .filter-off, .filter-on {
@@ -38,10 +39,15 @@ code {
     opacity: 1;
 }
 
+.char-display {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .char-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    margin-left: -200px;
 }
 
 .char-card {
@@ -94,7 +100,6 @@ code {
 .material-container:hover .material-tooltip {
     visibility: visible;
 }
-
 
 .material-img-back {
     border: 2px solid gray;

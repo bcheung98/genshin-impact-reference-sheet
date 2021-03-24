@@ -100,19 +100,19 @@ class App extends Component {
                 <header className="ui centered block header">
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
-                <div className="ui container">
+                <div className="filter-container">
                     <div className="filter-bar">
                         <ElementFilter setFilters={this.setElementFilters} />
                         <WeaponFilter setFilters={this.setWeaponFilters} />
                     </div>
                     <div className="filter-bar">
                         <TalentFilter setFilters={this.setTalentFilters} />
-                    </div>
-                    <div className="filter-bar">
                         <BossMatFilter setFilters={this.setBossMatFilters} />
                     </div>
                 </div>
-                <CharBrowser chars={this.state.chars} />
+                <div className="char-display">
+                    <CharBrowser chars={this.state.chars} />
+                </div>
             </div>
         )
     }
