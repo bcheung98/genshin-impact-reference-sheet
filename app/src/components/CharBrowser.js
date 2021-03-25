@@ -1,5 +1,5 @@
 import React from "react";
-import CharCard from "./CharCard"
+import CharCard from "./cards/CharCard"
 
 const CharBrowser = (props) => {
     return (

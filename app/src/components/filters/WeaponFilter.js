@@ -1,10 +1,10 @@
 import React from "react";
 
-let swordIcon = require("../assets/weapons/Weapon-class-sword-icon.png").default;
-let claymoreIcon = require("../assets/weapons/Weapon-class-claymore-icon.png").default;
-let polearmIcon = require("../assets/weapons/Weapon-class-polearm-icon.png").default;
-let bowIcon = require("../assets/weapons/Weapon-class-bow-icon.png").default;
-let catalystIcon = require("../assets/weapons/Weapon-class-catalyst-icon.png").default;
+let swordIcon = require("../../assets/weapons/Weapon-class-sword-icon.png").default;
+let claymoreIcon = require("../../assets/weapons/Weapon-class-claymore-icon.png").default;
+let polearmIcon = require("../../assets/weapons/Weapon-class-polearm-icon.png").default;
+let bowIcon = require("../../assets/weapons/Weapon-class-bow-icon.png").default;
+let catalystIcon = require("../../assets/weapons/Weapon-class-catalyst-icon.png").default;
 
 const WeaponFilter = (props) => {
     return (

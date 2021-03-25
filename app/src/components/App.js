@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
-import ElementFilter from "./ElementFilter";
-import WeaponFilter from "./WeaponFilter";
-import TalentFilter from "./TalentFilter";
-import BossMatFilter from "./BossMatFilter";
+import ElementFilter from "./filters/ElementFilter";
+import WeaponFilter from "./filters/WeaponFilter";
+import TalentFilter from "./filters/TalentFilter";
+import BossMatFilter from "./filters/BossMatFilter";
 import CharBrowser from "./CharBrowser";
 import characters from "../data/characters";
 

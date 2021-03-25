@@ -1,14 +1,14 @@
 import React from "react";
 
-let clawIcon = require("../assets/materials/boss_mats/Dvalins_Claw.png").default;
-let plumeIcon = require("../assets/materials/boss_mats/Dvalins_Plume.png").default;
-let sighIcon = require("../assets/materials/boss_mats/Dvalins_Sigh.png").default;
-let ringIcon = require("../assets/materials/boss_mats/Ring_of_Boreas.png").default;
-let locketIcon = require("../assets/materials/boss_mats/Spirit_Locket_of_Boreas.png").default;
-let tailIcon = require("../assets/materials/boss_mats/Tail_of_Boreas.png").default;
-let shadowIcon = require("../assets/materials/boss_mats/Shadow_of_the_Warrior.png").default;
-let shardIcon = require("../assets/materials/boss_mats/Shard_of_a_Foul_Legacy.png").default;
-let tuskIcon = require("../assets/materials/boss_mats/Tusk_of_Monoceros_Caeli.png").default;
+let clawIcon = require("../../assets/materials/boss_mats/Dvalins_Claw.png").default;
+let plumeIcon = require("../../assets/materials/boss_mats/Dvalins_Plume.png").default;
+let sighIcon = require("../../assets/materials/boss_mats/Dvalins_Sigh.png").default;
+let ringIcon = require("../../assets/materials/boss_mats/Ring_of_Boreas.png").default;
+let locketIcon = require("../../assets/materials/boss_mats/Spirit_Locket_of_Boreas.png").default;
+let tailIcon = require("../../assets/materials/boss_mats/Tail_of_Boreas.png").default;
+let shadowIcon = require("../../assets/materials/boss_mats/Shadow_of_the_Warrior.png").default;
+let shardIcon = require("../../assets/materials/boss_mats/Shard_of_a_Foul_Legacy.png").default;
+let tuskIcon = require("../../assets/materials/boss_mats/Tusk_of_Monoceros_Caeli.png").default;
 
 const BossMatFilter = (props) => {
     return (

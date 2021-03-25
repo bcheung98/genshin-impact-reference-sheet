@@ -1,11 +1,11 @@
 import React from "react";
 
-let pyroIcon = require("../assets/elements/Element_Pyro.png").default;
-let hydroIcon = require("../assets/elements/Element_Hydro.png").default;
-let electroIcon = require("../assets/elements/Element_Electro.png").default;
-let cryoIcon = require("../assets/elements/Element_Cryo.png").default;
-let anemoIcon = require("../assets/elements/Element_Anemo.png").default;
-let geoIcon = require("../assets/elements/Element_Geo.png").default;
+let pyroIcon = require("../../assets/elements/Element_Pyro.png").default;
+let hydroIcon = require("../../assets/elements/Element_Hydro.png").default;
+let electroIcon = require("../../assets/elements/Element_Electro.png").default;
+let cryoIcon = require("../../assets/elements/Element_Cryo.png").default;
+let anemoIcon = require("../../assets/elements/Element_Anemo.png").default;
+let geoIcon = require("../../assets/elements/Element_Geo.png").default;
 
 const ElementFilter = (props) => {
     return (

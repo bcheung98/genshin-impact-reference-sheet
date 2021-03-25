@@ -1,23 +1,23 @@
 import React from "react";
 
-import anemo from "../assets/elements/Element_Anemo.png";
-import cryo from "../assets/elements/Element_Cryo.png";
-import electro from "../assets/elements/Element_Electro.png";
-import geo from "../assets/elements/Element_Geo.png";
-import hydro from "../assets/elements/Element_Hydro.png";
-import pyro from "../assets/elements/Element_Pyro.png";
+import anemo from "../../assets/elements/Element_Anemo.png";
+import cryo from "../../assets/elements/Element_Cryo.png";
+import electro from "../../assets/elements/Element_Electro.png";
+import geo from "../../assets/elements/Element_Geo.png";
+import hydro from "../../assets/elements/Element_Hydro.png";
+import pyro from "../../assets/elements/Element_Pyro.png";
 
-import bow from "../assets/weapons/Weapon-class-bow-icon.png";
-import catalyst from "../assets/weapons/Weapon-class-catalyst-icon.png";
-import claymore from "../assets/weapons/Weapon-class-claymore-icon.png";
-import polearm from "../assets/weapons/Weapon-class-polearm-icon.png";
-import sword from "../assets/weapons/Weapon-class-sword-icon.png";
+import bow from "../../assets/weapons/Weapon-class-bow-icon.png";
+import catalyst from "../../assets/weapons/Weapon-class-catalyst-icon.png";
+import claymore from "../../assets/weapons/Weapon-class-claymore-icon.png";
+import polearm from "../../assets/weapons/Weapon-class-polearm-icon.png";
+import sword from "../../assets/weapons/Weapon-class-sword-icon.png";
 
-import fourStars from "../assets/stars/Icon_4_Stars.png";
-import fiveStars from "../assets/stars/Icon_5_Stars.png";
+import fourStars from "../../assets/stars/Icon_4_Stars.png";
+import fiveStars from "../../assets/stars/Icon_5_Stars.png";
 
-import mondstadt from "../assets/nations/Mondstadt.png";
-import liyue from "../assets/nations/Liyue.png";
+import mondstadt from "../../assets/nations/Mondstadt.png";
+import liyue from "../../assets/nations/Liyue.png";
 
 const elementMap = {
     "Anemo": anemo,

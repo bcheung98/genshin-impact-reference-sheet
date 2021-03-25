@@ -1,12 +1,12 @@
 import React from "react";
-import { formatTalents } from "./CharCardBack"
+import { formatTalents } from "../cards/CharCardBack"
 
-let freedomIcon = require("../assets/materials/talent_mats/Freedom.png").default;
-let resistanceIcon = require("../assets/materials/talent_mats/Resistance.png").default;
-let balladIcon = require("../assets/materials/talent_mats/Ballad.png").default;
-let prosperityIcon = require("../assets/materials/talent_mats/Prosperity.png").default;
-let diligenceIcon = require("../assets/materials/talent_mats/Diligence.png").default;
-let goldIcon = require("../assets/materials/talent_mats/Gold.png").default;
+let freedomIcon = require("../../assets/materials/talent_mats/Freedom.png").default;
+let resistanceIcon = require("../../assets/materials/talent_mats/Resistance.png").default;
+let balladIcon = require("../../assets/materials/talent_mats/Ballad.png").default;
+let prosperityIcon = require("../../assets/materials/talent_mats/Prosperity.png").default;
+let diligenceIcon = require("../../assets/materials/talent_mats/Diligence.png").default;
+let goldIcon = require("../../assets/materials/talent_mats/Gold.png").default;
 
 const TalentFilter = (props) => {
     return (
