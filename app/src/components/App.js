@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
-import ElementFilter from "./filters/ElementFilter";
-import WeaponFilter from "./filters/WeaponFilter";
-import TalentFilter from "./filters/TalentFilter";
-import BossMatFilter from "./filters/BossMatFilter";
+import Filter from "./Filters";
 import CharBrowser from "./CharBrowser";
 import characters from "../data/characters";
 
@@ -100,19 +97,8 @@ class App extends Component {
                 <header className="ui centered block header">
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
-                <div className="filter-container">
-                    <div className="filter-bar">
-                        <ElementFilter setFilters={this.setElementFilters} />
-                        <WeaponFilter setFilters={this.setWeaponFilters} />
-                    </div>
-                    <div className="filter-bar">
-                        <TalentFilter setFilters={this.setTalentFilters} />
-                        <BossMatFilter setFilters={this.setBossMatFilters} />
-                    </div>
-                </div>
-                <div className="char-display">
-                    <CharBrowser chars={this.state.chars} />
-                </div>
+                <Filter elementFilters={this.setElementFilters} weaponFilters={this.setWeaponFilters} talentFilters={this.setTalentFilters} bossMatFilters={this.setBossMatFilters} />
+                <CharBrowser chars={this.state.chars} />
             </div>
         )
     }
