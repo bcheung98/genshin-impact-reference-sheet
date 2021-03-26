@@ -12,8 +12,25 @@ code {
     monospace;
 }
 
+.Collapsible {
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.Collapsible__trigger {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-size: 18pt;
+    font-weight: bold;
+    position: relative;
+    border: 1px solid white;
+    padding: 10px;
+    background: #ccc;
+}
+
 .filter-container {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .filter-bar {
