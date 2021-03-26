@@ -75,7 +75,7 @@ class App extends Component {
     }
 
     filterCharacters = () => {
-        let chars = [...characters];
+        let chars = [...this.state.chars];
         if (this.state.filters.element.length > 0) {
             chars = chars.filter(char => this.state.filters.element.includes(char.element));
         }
@@ -88,7 +88,7 @@ class App extends Component {
         if (this.state.filters.bossMat.length > 0) {
             chars = chars.filter(char => this.state.filters.bossMat.includes(char.materials.bossMat));
         }
-        this.setState({ chars });
+        return chars;
     }
 
     render() {
@@ -98,7 +98,7 @@ class App extends Component {
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
                 <Filter elementFilters={this.setElementFilters} weaponFilters={this.setWeaponFilters} talentFilters={this.setTalentFilters} bossMatFilters={this.setBossMatFilters} />
-                <CharBrowser chars={this.state.chars} />
+                <CharBrowser chars={this.filterCharacters()} />
             </div>
         )
     }
