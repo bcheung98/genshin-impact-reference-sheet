@@ -5,7 +5,7 @@ const CharBrowser = (props) => {
     return (
         <div className="char-display">
             <div className="char-container">
-                {props.chars.map(char => <CharCard key={char.name} char={char} />)}
+                {props.chars.map(char => <CharCard key={char.id} char={char} />)}
             </div>
         </div>
     )
