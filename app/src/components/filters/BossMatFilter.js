@@ -1,8 +1,8 @@
 import React from "react";
 
-let clawIcon = require("../../assets/materials/boss_mats/Dvalins_Claw.png").default;
-let plumeIcon = require("../../assets/materials/boss_mats/Dvalins_Plume.png").default;
-let sighIcon = require("../../assets/materials/boss_mats/Dvalins_Sigh.png").default;
+let clawIcon = require("../../assets/materials/boss_mats/Dvalin's_Claw.png").default;
+let plumeIcon = require("../../assets/materials/boss_mats/Dvalin's_Plume.png").default;
+let sighIcon = require("../../assets/materials/boss_mats/Dvalin's_Sigh.png").default;
 let ringIcon = require("../../assets/materials/boss_mats/Ring_of_Boreas.png").default;
 let locketIcon = require("../../assets/materials/boss_mats/Spirit_Locket_of_Boreas.png").default;
 let tailIcon = require("../../assets/materials/boss_mats/Tail_of_Boreas.png").default;
