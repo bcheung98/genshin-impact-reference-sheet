@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
 import Filter from "./Filters";
 import CharBrowser from "./CharBrowser";
-import characters from "../data/characters";
 
 class App extends Component {
 
@@ -17,9 +16,9 @@ class App extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            chars: characters
-        });
+        fetch("http://localhost:5001/characters")
+            .then(r => r.json())
+            .then(chars => this.setState({ chars }));
     }
 
     setElementFilters = (e) => {
