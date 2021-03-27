@@ -104,7 +104,7 @@
                 "commonMat": "Fatui Insignia",
                 "bossMat": "Dvalin's Plume"
             },
-            "description": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way",
+            "description": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way.",
             "gender": "Male",
             "nation": "Mondstadt"
         },
