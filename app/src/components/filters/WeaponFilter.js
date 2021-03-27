@@ -10,23 +10,23 @@ const WeaponFilter = (props) => {
     return (
         <div>
             <div className="filter">
-                <img className="filter-off" id="sword-button" src={swordIcon} alt="Sword" onClick={props.setFilters} />
+                <img className="filter-off" id="sword-button" src={swordIcon} alt="Sword" onClick={(e) => props.setFilters(e, "weapon")} />
                 <p className="material-tooltip">Sword</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="claymore-button" src={claymoreIcon} alt="Claymore" onClick={props.setFilters} />
+                <img className="filter-off" id="claymore-button" src={claymoreIcon} alt="Claymore" onClick={(e) => props.setFilters(e, "weapon")} />
                 <p className="material-tooltip">Claymore</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="polearm-button" src={polearmIcon} alt="Polearm" onClick={props.setFilters} />
+                <img className="filter-off" id="polearm-button" src={polearmIcon} alt="Polearm" onClick={(e) => props.setFilters(e, "weapon")} />
                 <p className="material-tooltip">Polearm</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="bow-button" src={bowIcon} alt="Bow" onClick={props.setFilters} />
+                <img className="filter-off" id="bow-button" src={bowIcon} alt="Bow" onClick={(e) => props.setFilters(e, "weapon")} />
                 <p className="material-tooltip">Bow</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="catalyst-button" src={catalystIcon} alt="Catalyst" onClick={props.setFilters} />
+                <img className="filter-off" id="catalyst-button" src={catalystIcon} alt="Catalyst" onClick={(e) => props.setFilters(e, "weapon")} />
                 <p className="material-tooltip">Catalyst</p>
             </div>
         </div>

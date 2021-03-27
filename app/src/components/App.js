@@ -25,11 +25,30 @@ class App extends Component {
         return [...this.state.chars].sort((a, b) => a.name < b.name ? -1 : 1)
     }
 
-    setElementFilters = (e) => {
+    toggleButton = (e, filterType) => {
         let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
         button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
+        switch (filterType) {
+            case "element":
+                this.setElementFilters(e.target.alt);
+                break;
+            case "weapon":
+                this.setWeaponFilters(e.target.alt);
+                break;
+            case "talent":
+                this.setTalentFilters(e.target.alt);
+                break;
+            case "boss":
+                this.setBossMatFilters(e.target.alt);
+                break;
+            default:
+                this.filterCharacters();
+        }
+    }
+
+    setElementFilters = (target) => {
         let temp = [...this.state.filters.element];
-        !this.state.filters.element.includes(e.target.alt) ? temp.push(e.target.alt) : temp.splice(temp.indexOf(e.target.alt), 1);
+        !this.state.filters.element.includes(target) ? temp.push(target) : temp.splice(temp.indexOf(target), 1);
         this.setState({
             filters: {
                 ...this.state.filters,
@@ -38,11 +57,9 @@ class App extends Component {
         }, () => this.filterCharacters());
     }
 
-    setWeaponFilters = (e) => {
-        let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
-        button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
+    setWeaponFilters = (target) => {
         let temp = [...this.state.filters.weapon];
-        !this.state.filters.weapon.includes(e.target.alt) ? temp.push(e.target.alt) : temp.splice(temp.indexOf(e.target.alt), 1);
+        !this.state.filters.weapon.includes(target) ? temp.push(target) : temp.splice(temp.indexOf(target), 1);
         this.setState({
             filters: {
                 ...this.state.filters,
@@ -51,11 +68,9 @@ class App extends Component {
         }, () => this.filterCharacters());
     }
 
-    setTalentFilters = (e) => {
-        let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
-        button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
+    setTalentFilters = (target) => {
         let temp = [...this.state.filters.talent];
-        !this.state.filters.talent.includes(e.target.alt) ? temp.push(e.target.alt) : temp.splice(temp.indexOf(e.target.alt), 1);
+        !this.state.filters.talent.includes(target) ? temp.push(target) : temp.splice(temp.indexOf(target), 1);
         this.setState({
             filters: {
                 ...this.state.filters,
@@ -64,11 +79,9 @@ class App extends Component {
         }, () => this.filterCharacters());
     }
 
-    setBossMatFilters = (e) => {
-        let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
-        button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
+    setBossMatFilters = (target) => {
         let temp = [...this.state.filters.bossMat];
-        !this.state.filters.bossMat.includes(e.target.alt) ? temp.push(e.target.alt) : temp.splice(temp.indexOf(e.target.alt), 1);
+        !this.state.filters.bossMat.includes(target) ? temp.push(target) : temp.splice(temp.indexOf(target), 1);
         this.setState({
             filters: {
                 ...this.state.filters,
@@ -100,7 +113,7 @@ class App extends Component {
                 <header className="ui centered block header">
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
-                <Filter elementFilters={this.setElementFilters} weaponFilters={this.setWeaponFilters} talentFilters={this.setTalentFilters} bossMatFilters={this.setBossMatFilters} />
+                <Filter elementFilters={this.toggleButton} weaponFilters={this.toggleButton} talentFilters={this.toggleButton} bossMatFilters={this.toggleButton} />
                 <CharBrowser chars={this.filterCharacters()} />
             </div>
         )

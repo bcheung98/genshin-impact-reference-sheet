@@ -12,27 +12,27 @@ const TalentFilter = (props) => {
     return (
         <div>
             <div className="filter">
-                <img className="filter-off" id="freedom-button" src={freedomIcon} alt="Freedom" onClick={props.setFilters} />
+                <img className="filter-off" id="freedom-button" src={freedomIcon} alt="Freedom" onClick={(e) => props.setFilters(e, "talent")} />
                 <p className="material-tooltip">{formatTalents("Freedom")}</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="resistance-button" src={resistanceIcon} alt="Resistance" onClick={props.setFilters} />
+                <img className="filter-off" id="resistance-button" src={resistanceIcon} alt="Resistance" onClick={(e) => props.setFilters(e, "talent")} />
                 <p className="material-tooltip">{formatTalents("Resistance")}</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="ballad-button" src={balladIcon} alt="Ballad" onClick={props.setFilters} />
+                <img className="filter-off" id="ballad-button" src={balladIcon} alt="Ballad" onClick={(e) => props.setFilters(e, "talent")} />
                 <p className="material-tooltip">{formatTalents("Ballad")}</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="prosperity-button" src={prosperityIcon} alt="Prosperity" onClick={props.setFilters} />
+                <img className="filter-off" id="prosperity-button" src={prosperityIcon} alt="Prosperity" onClick={(e) => props.setFilters(e, "talent")} />
                 <p className="material-tooltip">{formatTalents("Prosperity")}</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="diligence-button" src={diligenceIcon} alt="Diligence" onClick={props.setFilters} />
+                <img className="filter-off" id="diligence-button" src={diligenceIcon} alt="Diligence" onClick={(e) => props.setFilters(e, "talent")} />
                 <p className="material-tooltip">{formatTalents("Diligence")}</p>
             </div>
             <div className="filter">
-                <img className="filter-off" id="gold-button" src={goldIcon} alt="Gold" onClick={props.setFilters} />
+                <img className="filter-off" id="gold-button" src={goldIcon} alt="Gold" onClick={(e) => props.setFilters(e, "talent")} />
                 <p className="material-tooltip">{formatTalents("Gold")}</p>
             </div>
         </div>
