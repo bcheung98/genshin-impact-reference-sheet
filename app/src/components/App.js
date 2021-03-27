@@ -46,9 +46,9 @@ class App extends Component {
         }
     }
 
-    setElementFilters = (target) => {
+    setElementFilters = (element) => {
         let temp = [...this.state.filters.element];
-        !this.state.filters.element.includes(target) ? temp.push(target) : temp.splice(temp.indexOf(target), 1);
+        !this.state.filters.element.includes(element) ? temp.push(element) : temp.splice(temp.indexOf(element), 1);
         this.setState({
             filters: {
                 ...this.state.filters,
@@ -57,9 +57,9 @@ class App extends Component {
         }, () => this.filterCharacters());
     }
 
-    setWeaponFilters = (target) => {
+    setWeaponFilters = (weapon) => {
         let temp = [...this.state.filters.weapon];
-        !this.state.filters.weapon.includes(target) ? temp.push(target) : temp.splice(temp.indexOf(target), 1);
+        !this.state.filters.weapon.includes(weapon) ? temp.push(weapon) : temp.splice(temp.indexOf(weapon), 1);
         this.setState({
             filters: {
                 ...this.state.filters,
@@ -68,9 +68,9 @@ class App extends Component {
         }, () => this.filterCharacters());
     }
 
-    setTalentFilters = (target) => {
+    setTalentFilters = (talent) => {
         let temp = [...this.state.filters.talent];
-        !this.state.filters.talent.includes(target) ? temp.push(target) : temp.splice(temp.indexOf(target), 1);
+        !this.state.filters.talent.includes(talent) ? temp.push(talent) : temp.splice(temp.indexOf(talent), 1);
         this.setState({
             filters: {
                 ...this.state.filters,
@@ -79,9 +79,9 @@ class App extends Component {
         }, () => this.filterCharacters());
     }
 
-    setBossMatFilters = (target) => {
+    setBossMatFilters = (bossMat) => {
         let temp = [...this.state.filters.bossMat];
-        !this.state.filters.bossMat.includes(target) ? temp.push(target) : temp.splice(temp.indexOf(target), 1);
+        !this.state.filters.bossMat.includes(bossMat) ? temp.push(bossMat) : temp.splice(temp.indexOf(bossMat), 1);
         this.setState({
             filters: {
                 ...this.state.filters,
@@ -113,7 +113,7 @@ class App extends Component {
                 <header className="ui centered block header">
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
-                <Filter elementFilters={this.toggleButton} weaponFilters={this.toggleButton} talentFilters={this.toggleButton} bossMatFilters={this.toggleButton} />
+                <Filter onClick={this.toggleButton} />
                 <CharBrowser chars={this.filterCharacters()} />
             </div>
         )
