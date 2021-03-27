@@ -21,6 +21,10 @@ class App extends Component {
             .then(chars => this.setState({ chars }));
     }
 
+    sortCharacters = () => {
+        return [...this.state.chars].sort((a, b) => a.name < b.name ? -1 : 1)
+    }
+
     setElementFilters = (e) => {
         let button = document.getElementById(`${e.target.alt.toLowerCase()}-button`)
         button.className === "filter-off" ? button.className = "filter-on" : button.className = "filter-off";
@@ -74,7 +78,7 @@ class App extends Component {
     }
 
     filterCharacters = () => {
-        let chars = [...this.state.chars];
+        let chars = this.sortCharacters();
         if (this.state.filters.element.length > 0) {
             chars = chars.filter(char => this.state.filters.element.includes(char.element));
         }
