@@ -15,6 +15,8 @@
                 "bossMat": "Dvalin's Sigh"
             },
             "description": "Always energetic and full of life, Amber's the best - albeit only - Outrider of the Knights of Favonius.",
+            "constellation": "Lepus",
+            "birthday": "8/10",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -33,6 +35,8 @@
                 "bossMat": "Ring of Boreas"
             },
             "description": "Every citizen of Mondstadt adores Barbara. However, she learned the word \"idol\" from a magazine.",
+            "constellation": "Crater",
+            "birthday": "7/5",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -51,6 +55,8 @@
                 "bossMat": "Dvalin's Sigh"
             },
             "description": "Captain of her crew, The Crux. She's quite an unbound and forthright woman.",
+            "constellation": "Victor Mare",
+            "birthday": "2/14",
             "gender": "Female",
             "nation": "Liyue"
         },
@@ -69,6 +75,8 @@
                 "bossMat": "Dvalin's Plume"
             },
             "description": "A righteous and good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.",
+            "constellation": "Rota Calamitas",
+            "birthday": "2/29",
             "gender": "Male",
             "nation": "Mondstadt"
         },
@@ -87,6 +95,8 @@
                 "bossMat": "Dvalin's Sigh"
             },
             "description": "A young exorcist from a family of exorcists. He does everything he can to suppress his pure positive energy.",
+            "constellation": "Nubis Caesor",
+            "birthday": "9/7",
             "gender": "Male",
             "nation": "Liyue"
         },
@@ -105,6 +115,8 @@
                 "bossMat": "Dvalin's Plume"
             },
             "description": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way.",
+            "constellation": "Noctua",
+            "birthday": "4/30",
             "gender": "Male",
             "nation": "Mondstadt"
         },
@@ -123,6 +135,8 @@
                 "bossMat": "Spirit Locket of Boreas"
             },
             "description": "A mysterious girl who calls herself \"Prinzessin der Verurteilung\" and travels with a night raven named Oz.",
+            "constellation": "Corvus",
+            "birthday": "5/27",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -141,6 +155,8 @@
                 "bossMat": "Dvalin's Plume"
             },
             "description": "The righteous and rigorous Dandelion Knight, and Acting Grand Master of the Knights of Favonius of Mondstadt.",
+            "constellation": "Leo Minor",
+            "birthday": "3/14",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -159,6 +175,8 @@
                 "bossMat": "Spirit Locket of Boreas"
             },
             "description": "A thinker in the Knights of Favonius with a somewhat exotic appearance.",
+            "constellation": "Pavo Ocellus",
+            "birthday": "11/30",
             "gender": "Male",
             "nation": "Mondstadt"
         },
@@ -177,6 +195,8 @@
                 "bossMat": "Ring of Boreas"
             },
             "description": "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis' unilateral approach to policymaking in Liyue ⁠— but in truth, gods admire skeptics such as her quite a lot.",
+            "constellation": "Trulla Cementarii",
+            "birthday": "11/20",
             "gender": "Female",
             "nation": "Liyue"
         },
@@ -195,6 +215,8 @@
                 "bossMat": "Ring of Boreas"
             },
             "description": "An explosives expert and a regular at the Knights of Favonius' confinement room. Also known as Fleeing Sunlight.",
+            "constellation": "Trifolium",
+            "birthday": "7/27",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -213,6 +235,8 @@
                 "bossMat": "Dvalin's Claw"
             },
             "description": "The languid but knowledgeable Librarian of the Knights of Favonius, deemed by Sumeru Academia to be their most distinguished graduate in the past two centuries.",
+            "constellation": "Tempus Fugit",
+            "birthday": "6/9",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -231,6 +255,8 @@
                 "bossMat": "Ring of Boreas"
             },
             "description": "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus\", and who possesses abilities to match the title. Erudite, but prideful.",
+            "constellation": "Astrolabos",
+            "birthday": "8/31",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -249,6 +275,8 @@
                 "bossMat": "Spirit Locket of Boreas"
             },
             "description": "The Tianquan of Liyue Qixing. Her wealth is unsurpassed in all of Teyvat.",
+            "constellation": "Opus Aequilibrium",
+            "birthday": "8/26",
             "gender": "Female",
             "nation": "Liyue"
         },
@@ -267,6 +295,8 @@
                 "bossMat": "Dvalin's Claw"
             },
             "description": "A maid who faithfully serves the Knights of Favonius. She dreams of joining their ranks someday.",
+            "constellation": "Parma Cordids",
+            "birthday": "3/21",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -285,6 +315,8 @@
                 "bossMat": "Tail of Boreas"
             },
             "description": "An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion.",
+            "constellation": "Pristina Nola",
+            "birthday": "3/3",
             "gender": "Female",
             "nation": "Liyue"
         },
@@ -303,6 +335,8 @@
                 "bossMat": "Dvalin's Claw"
             },
             "description": "A boy who lives among the wolves in Wolvendom of Mondstadt, away from human civilization. As agile as lightning.",
+            "constellation": "Lupis Minor",
+            "birthday": "9/9",
             "gender": "Male",
             "nation": "Mondstadt"
         },
@@ -321,6 +355,8 @@
                 "bossMat": "Spirit Locket of Boreas"
             },
             "description": "An alchemist filled with curiosity about all things. She researches bio-alchemy.",
+            "constellation": "Ampulla",
+            "birthday": "11/26",
             "gender": "Female",
             "nation": "Mondstadt"
         },
@@ -339,6 +375,8 @@
                 "bossMat": "Tail of Boreas"
             },
             "description": "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.",
+            "constellation": "Carmen Dei",
+            "birthday": "6/16",
             "gender": "Male",
             "nation": "Mondstadt"
         },
@@ -357,29 +395,13 @@
                 "bossMat": "Dvalin's Claw"
             },
             "description": "A renowned chef from Liyue. She's extremely passionate about cooking and excels at making her signature hot and spicy dishes.",
+            "constellation": "Trulla",
+            "birthday": "11/2",
             "gender": "Female",
             "nation": "Liyue"
         },
         {
             "id": 20,
-            "name": "Xiao",
-            "title": "Vigilant Yaksha",
-            "rarity": 5,
-            "element": "Anemo",
-            "weapon": "Polearm",
-            "materials": {
-                "talents": "Prosperity",
-                "ascensionMat": "Juvenile Jade",
-                "localMat": "Qingxin",
-                "commonMat": "Slime",
-                "bossMat": "Shadow of the Warrior"
-            },
-            "description": "A yaksha adeptus who defends Liyue. Also heralded as the \"Conquerer of Demons\" and \"Vigilant Yaksha\".",
-            "gender": "Male",
-            "nation": "Liyue"
-        },
-        {
-            "id": 21,
             "name": "Xingqiu",
             "title": "Juvenile Galant",
             "rarity": 4,
@@ -393,11 +415,13 @@
                 "bossMat": "Tail of Boreas"
             },
             "description": "A young man carrying a longsword who is frequently seen at book booths. He has a heart of gold and yearns for justice and fairness for all.",
+            "constellation": "Fabulae Textile",
+            "birthday": "10/9",
             "gender": "Male",
             "nation": "Liyue"
         },
         {
-            "id": 22,
+            "id": 21,
             "name": "Tartaglia",
             "title": "Childe",
             "rarity": 5,
@@ -411,11 +435,13 @@
                 "bossMat": "Shard of a Foul Legacy"
             },
             "description": "No. 11 of The Harbingers, also known as \"Childe\". His name is highly feared on the battlefield.",
+            "constellation": "Monoceros Caeli",
+            "birthday": "7/20",
             "gender": "Male",
             "nation": "Liyue"
         },
         {
-            "id": 23,
+            "id": 22,
             "name": "Diona",
             "title": "Kätzlein Cocktail",
             "rarity": 4,
@@ -429,11 +455,13 @@
                 "bossMat": "Shard of a Foul Legacy"
             },
             "description": "A young lady who has inherited trace amounts of non-human blood. She is the incredible popular bartender of the Cat's Tail tavern.",
+            "constellation": "Feles",
+            "birthday": "1/18",
             "gender": "Female",
             "nation": "Mondstadt"
         },
         {
-            "id": 24,
+            "id": 23,
             "name": "Zhongli",
             "title": "Vago Mundo",
             "rarity": 5,
@@ -447,11 +475,13 @@
                 "bossMat": "Tusk of Monoceros Caeli"
             },
             "description": "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.",
+            "constellation": "Lapis Dei",
+            "birthday": "12/31",
             "gender": "Male",
             "nation": "Liyue"
         },
         {
-            "id": 25,
+            "id": 24,
             "name": "Xinyan",
             "title": "Blazing Riff",
             "rarity": 4,
@@ -465,11 +495,13 @@
                 "bossMat": "Tusk of Monoceros Caeli"
             },
             "description": "Liyue's sole rock 'n' roll musician. She rebels against ossified prejudices using her music and passionate singing.", 
+            "constellation": "Fila Ignium",
+            "birthday": "10/16",
             "gender": "Female",
             "nation": "Liyue"
         },
         {
-            "id": 26,
+            "id": 25,
             "name": "Albedo",
             "title": "Kreideprinz",
             "rarity": 5,
@@ -483,11 +515,13 @@
                 "bossMat": "Tusk of Monoceros Caeli"
             },
             "description": "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.",
+            "constellation": "Princeps Cretaceus",
+            "birthday": "9/13",
             "gender": "Male",
             "nation": "Mondstadt"
         },
         {
-            "id": 27,
+            "id": 26,
             "name": "Ganyu",
             "title": "Plenilune Gaze",
             "rarity": 5,
@@ -501,7 +535,29 @@
                 "bossMat": "Shadow of the Warrior"
             },
             "description": "The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins.",
+            "constellation": "Sinae Unicornis",
+            "birthday": "12/2",
             "gender": "Female",
+            "nation": "Liyue"
+        },
+        {
+            "id": 27,
+            "name": "Xiao",
+            "title": "Vigilant Yaksha",
+            "rarity": 5,
+            "element": "Anemo",
+            "weapon": "Polearm",
+            "materials": {
+                "talents": "Prosperity",
+                "ascensionMat": "Juvenile Jade",
+                "localMat": "Qingxin",
+                "commonMat": "Slime",
+                "bossMat": "Shadow of the Warrior"
+            },
+            "description": "A yaksha adeptus who defends Liyue. Also heralded as the \"Conquerer of Demons\" and \"Vigilant Yaksha\".",
+            "constellation": "Alatus Nemeseos",
+            "birthday": "4/17",
+            "gender": "Male",
             "nation": "Liyue"
         },
         {
@@ -519,6 +575,8 @@
                 "bossMat": "Shard of a Foul Legacy"
             },
             "description": "The 77th Director of the Wangsheng Funeral Parlor. She took over the business at a rather young age.",
+            "constellation": "Papilio Charontis",
+            "birthday": "7/15",
             "gender": "Female",
             "nation": "Liyue"
         }
