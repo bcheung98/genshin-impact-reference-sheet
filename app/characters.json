@@ -579,6 +579,26 @@
             "birthday": "7/15",
             "gender": "Female",
             "nation": "Liyue"
+        },
+        {
+            "id": 29,
+            "name": "Rosaria",
+            "title": "Thorny Benevolence",
+            "rarity": 4,
+            "element": "Cryo",
+            "weapon": "Polearm",
+            "materials": {
+                "talents": "Ballad",
+                "ascensionMat": "Hoarfrost Core",
+                "localMat": "Valberry",
+                "commonMat": "Fatui Insignia",
+                "bossMat": "Shadow of the Warrior"
+            },
+            "description": "A sister of the church, though you wouldn't know it if it weren't for her attire. Known for her sharp, cold words and manner, she often works alone.",
+            "constellation": "Spinea Corona",
+            "birthday": "1/24",
+            "gender": "Female",
+            "nation": "Mondstadt"
         }
     ]
 }
