@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
 import Filter from "./Filters";
 import CharBrowser from "./CharBrowser";
+import Error from "./Error";
 
 class App extends Component {
 
     state = {
+        success: true,
         chars: [],
         filters: {
             element: [],
@@ -16,9 +18,10 @@ class App extends Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:5001/characters")
+        fetch("https://bcheung98.github.io/genshin-impact-character-db/characters.json")
             .then(r => r.json())
-            .then(chars => this.setState({ chars }));
+            .then(chars => this.setState({ chars }))
+            .catch(() => this.setState({ success: false }));
     }
 
     sortCharacters = () => {
@@ -114,7 +117,7 @@ class App extends Component {
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
                 <Filter onClick={this.toggleButton} />
-                <CharBrowser chars={this.filterCharacters()} />
+                {this.state.success ? <CharBrowser chars={this.filterCharacters()} /> : <Error />}
             </div>
         )
     }
