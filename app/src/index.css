@@ -56,11 +56,12 @@ code {
 }
 
 .filter-off:hover, .filter-on:hover {
-    box-shadow: 0 0 2px 1px dodgerblue;
+    box-shadow: 0 0 15px 1px dodgerblue;
+    border: 2px solid dodgerblue;
 }
 
 .filter-on {
-    background-color: dodgerblue;
+    background-color: royalblue;
     opacity: 1;
 }
 
