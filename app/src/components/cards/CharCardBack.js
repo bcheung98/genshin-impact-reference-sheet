@@ -23,7 +23,7 @@ export const formatTalents = (talent) => {
 const CharCardBack = (props) => {
     let { char } = props
     let { talents, ascensionMat, localMat, commonMat, bossMat } = char.materials;
-    let avatarURL = require(`../../assets/avatars/Character_${char.name.split(" ").join("_")}_Avatar.png`).default;
+    let avatarURL = require(`../../assets/characters/avatars/Character_${char.name.split(" ").join("_")}_Avatar.png`).default;
     return (
         <div id={`${char.name}-back`} className="char-card-back" onClick={() => props.flipCardFromBack(props.char, avatarURL)} >
             <div className="materials">

@@ -2,7 +2,7 @@ import React from "react";
 
 const CharCardFront = (props) => {
     let { name, title, rarity, element, weapon, description, nation } = props.char;
-    let avatarURL = require(`../../assets/avatars/Character_${name.split(" ").join("_")}_Avatar.png`).default;
+    let avatarURL = require(`../../assets/characters/avatars/Character_${name.split(" ").join("_")}_Avatar.png`).default;
     return (
         <div id={`${name}-front`} className="char-card-front" onClick={() => props.flipCardFromFront(props.char, avatarURL)}>
             <div>
@@ -16,7 +16,7 @@ const CharCardFront = (props) => {
             <div className="char-title">
                 {title}
             </div>
-            <img src={require(`../../assets/cards/Character_${name.split(" ").join("_")}_Card.png`).default} alt={name} />
+            <img src={require(`../../assets/characters/cards/Character_${name.split(" ").join("_")}_Card.png`).default} alt={name} />
             <img className="nation-img" src={require(`../../assets/nations/${nation}.png`).default} alt={nation} />
             <div className="char-desc">
                 {description}
