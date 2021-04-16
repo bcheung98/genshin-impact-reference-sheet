@@ -118,6 +118,11 @@ class App extends Component {
                 </header>
                 <Filter onClick={this.toggleButton} />
                 {this.state.success ? <CharBrowser chars={this.filterCharacters()} /> : <Error />}
+                <footer className="ui centered block header">
+                    <p>Genshin Impact™ is a registered trademark of MiHoYo Co., Ltd.</p>
+                    <p>Images and data ©MiHoYo Co., Ltd.</p>
+                    <p>This website was made for my own education and research into making React applications.</p>
+                </footer>
             </div>
         )
     }
