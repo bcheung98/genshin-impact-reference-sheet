@@ -12,6 +12,70 @@ code {
     monospace;
 }
 
+.card-toggle {
+    text-align: center;
+    margin: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(35px);
+    -ms-transform: translateX(35px);
+    transform: translateX(35px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
 .Collapsible {
     border: 2px solid gray;
     border-radius: 5px;
@@ -98,10 +162,9 @@ code {
     margin: 10px;
 }
 
-.char-card-front, .char-card-back {
+.char-card-front, .char-card-back, .char-card-small {
     border: 2px solid gray;
     border-radius: 15px;
-    position: absolute;
     width: inherit;
     height: inherit;
     padding-top: 10px;
@@ -111,15 +174,52 @@ code {
     background-color: #ccc;
 }
 
+.char-card-front, .char-card-back {
+    position: absolute;
+}
+
 .char-card-back {
     transform: rotateY(180deg);
+}
+
+.char-card-small {
+    width: 285px;
+    height: 186px;
+    margin: 10px;
+}
+
+.char-icon {
+    margin-top: 5px;
+    height: 90px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.small-icon {
+    margin-top: -50px;
+}
+
+.element-card-small, .weapon-card-small {
+    height: 40px;
+}
+
+.weapon-card-small {
+    margin-left: 190px;
+}
+
+.char-name {
+    margin-top: -50px;
 }
 
 .rating-img {
     height: 25px;
 }
 
-.materials {
+.rating-card-small > .rating-img, .char-icon {
+    margin-left: -175px;
+}
+
+.materials, .materials-small {
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -128,7 +228,7 @@ code {
     margin: 5px;
 }
 
-.material-container .material-tooltip {
+.material-container .material-tooltip, .material-container-small .material-tooltip {
     visibility: hidden;
     position: absolute;
     text-align: center;
@@ -139,17 +239,40 @@ code {
     margin-top: -30px;
 }
 
-.material-container:hover .material-tooltip {
+.material-container:hover .material-tooltip, .material-container-small:hover .material-tooltip {
     visibility: visible;
 }
 
-.material-img-back {
+.material-img-back, .material-img-small {
     border: 2px solid gray;
-    border-radius: 15px;
     background-color: #bbb;
     margin: 5px;
+}
+
+.material-img-back {
+    border-radius: 15px;
+}
+
+.material-img-small {
+    border-radius: 5px;
+}
+
+.material-img-back {
     height: 64px;
-    width: 64px;
+}
+
+.material-img-small {
+    height: 48px;
+}
+
+.material-container-small {
+    margin-top: -6px;
+}
+
+.materials-small {
+    margin-top: -122px;
+    margin-left: 100px;
+    width: 175px;
 }
 
 .nation-img {

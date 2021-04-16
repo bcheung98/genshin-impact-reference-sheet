@@ -8,6 +8,7 @@ class App extends Component {
 
     state = {
         success: true,
+        cards: "small",
         chars: [],
         filters: {
             element: [],
@@ -26,6 +27,10 @@ class App extends Component {
 
     sortCharacters = () => {
         return [...this.state.chars].sort((a, b) => a.name < b.name ? -1 : 1)
+    }
+
+    toggleCards = () => {
+        this.state.cards === "big" ? this.setState({ cards: "small" }) : this.setState({ cards: "big" });
     }
 
     toggleButton = (e, filterType) => {
@@ -116,8 +121,15 @@ class App extends Component {
                 <header className="ui centered block header">
                     <h1>Genshin Impact Reference Sheet</h1>
                 </header>
+                <div className="card-toggle">
+                    <label className="switch">
+                        <input type="checkbox" onClick={this.toggleCards} />
+                        <span className="slider round"></span>
+                    </label>
+                    <p>Show Large Cards</p>
+                </div>
                 <Filter onClick={this.toggleButton} />
-                {this.state.success ? <CharBrowser chars={this.filterCharacters()} /> : <Error />}
+                {this.state.success ? <CharBrowser chars={this.filterCharacters()} cards={this.state.cards} /> : <Error />}
                 <footer className="ui centered block header">
                     <p>Genshin Impact™ is a registered trademark of MiHoYo Co., Ltd.</p>
                     <p>Images and data ©MiHoYo Co., Ltd.</p>

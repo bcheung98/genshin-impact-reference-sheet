@@ -6,7 +6,7 @@ const CharCardFront = (props) => {
     return (
         <div id={`${name}-front`} className="char-card-front" onClick={() => props.flipCardFromFront(props.char, avatarURL)}>
             <div>
-                <h1>{name}</h1>
+                <h1 className="char-name">{name}</h1>
                 <img className="rating-img" src={require(`../../assets/stars/Icon_${rarity}_Stars.png`).default} alt={rarity} />
                 <div>
                     <img src={require(`../../assets/elements/Element_${element}.png`).default} alt={element} />
