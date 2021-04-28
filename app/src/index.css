@@ -97,11 +97,6 @@ input:checked + .slider:before {
     margin-bottom: 5px;
 }
 
-.filter-bar {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
 .filter {
     display: inline-flex;
 }

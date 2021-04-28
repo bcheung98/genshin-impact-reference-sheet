@@ -9,7 +9,7 @@ let geoIcon = require("../../assets/elements/Element_Geo.png").default;
 
 const ElementFilter = (props) => {
     return (
-        <div>
+        <div className="filter-bar">
             <div className="filter">
                 <img className="filter-off" id="pyro-button" src={pyroIcon} alt="Pyro" onClick={(e) => props.onClick(e, "element")} />
                 <p className="material-tooltip">Pyro</p>

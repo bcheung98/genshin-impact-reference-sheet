@@ -8,7 +8,7 @@ let catalystIcon = require("../../assets/weapons/Weapon-class-catalyst-icon.png"
 
 const WeaponFilter = (props) => {
     return (
-        <div>
+        <div className="filter-bar">
             <div className="filter">
                 <img className="filter-off" id="sword-button" src={swordIcon} alt="Sword" onClick={(e) => props.onClick(e, "weapon")} />
                 <p className="material-tooltip">Sword</p>

@@ -9,14 +9,10 @@ const Filters = (props) => {
     return (
         <Collapsible trigger="Show Filters" triggerWhenOpen="Hide Filters">
             <div className="filter-container">
-                <div className="filter-bar">
-                    <ElementFilter onClick={props.onClick} />
-                    <WeaponFilter onClick={props.onClick} />
-                </div>
-                <div className="filter-bar">
-                    <TalentFilter onClick={props.onClick} />
-                    <BossMatFilter onClick={props.onClick} />
-                </div>
+                <ElementFilter onClick={props.onClick} />
+                <WeaponFilter onClick={props.onClick} />
+                <TalentFilter onClick={props.onClick} />
+                <BossMatFilter onClick={props.onClick} />
             </div>
         </Collapsible>
     )

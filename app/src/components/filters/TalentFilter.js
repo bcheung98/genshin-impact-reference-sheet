@@ -10,7 +10,7 @@ let goldIcon = require("../../assets/materials/talent_mats/Gold.png").default;
 
 const TalentFilter = (props) => {
     return (
-        <div>
+        <div className="filter-bar">
             <div className="filter">
                 <img className="filter-off" id="freedom-button" src={freedomIcon} alt="Freedom" onClick={(e) => props.onClick(e, "talent")} />
                 <p className="material-tooltip">{formatTalents("Freedom")}</p>
