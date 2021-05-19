@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/genshin-impact-reference-sheet/static/css/main.6ebfa901.chunk.css",
+    "main.css": "/genshin-impact-reference-sheet/static/css/main.db90ad27.chunk.css",
     "main.js": "/genshin-impact-reference-sheet/static/js/main.4cbb8bcc.chunk.js",
     "main.js.map": "/genshin-impact-reference-sheet/static/js/main.4cbb8bcc.chunk.js.map",
     "runtime-main.js": "/genshin-impact-reference-sheet/static/js/runtime-main.dd014056.js",
@@ -10,7 +10,7 @@
     "static/js/2.514b0df6.chunk.js.map": "/genshin-impact-reference-sheet/static/js/2.514b0df6.chunk.js.map",
     "index.html": "/genshin-impact-reference-sheet/index.html",
     "static/css/2.68f65abc.chunk.css.map": "/genshin-impact-reference-sheet/static/css/2.68f65abc.chunk.css.map",
-    "static/css/main.6ebfa901.chunk.css.map": "/genshin-impact-reference-sheet/static/css/main.6ebfa901.chunk.css.map",
+    "static/css/main.db90ad27.chunk.css.map": "/genshin-impact-reference-sheet/static/css/main.db90ad27.chunk.css.map",
     "static/js/2.514b0df6.chunk.js.LICENSE.txt": "/genshin-impact-reference-sheet/static/js/2.514b0df6.chunk.js.LICENSE.txt",
     "static/media/Anemo_Gemstone.png": "/genshin-impact-reference-sheet/static/media/Anemo_Gemstone.8e700e70.png",
     "static/media/Arrow.png": "/genshin-impact-reference-sheet/static/media/Arrow.29467e1e.png",
@@ -147,7 +147,7 @@
     "static/js/runtime-main.dd014056.js",
     "static/css/2.68f65abc.chunk.css",
     "static/js/2.514b0df6.chunk.js",
-    "static/css/main.6ebfa901.chunk.css",
+    "static/css/main.db90ad27.chunk.css",
     "static/js/main.4cbb8bcc.chunk.js"
   ]
 }
