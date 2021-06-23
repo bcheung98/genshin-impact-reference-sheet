@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/genshin-impact-reference-sheet/static/css/main.db90ad27.chunk.css",
-    "main.js": "/genshin-impact-reference-sheet/static/js/main.bba5d151.chunk.js",
-    "main.js.map": "/genshin-impact-reference-sheet/static/js/main.bba5d151.chunk.js.map",
+    "main.js": "/genshin-impact-reference-sheet/static/js/main.7f8bc317.chunk.js",
+    "main.js.map": "/genshin-impact-reference-sheet/static/js/main.7f8bc317.chunk.js.map",
     "runtime-main.js": "/genshin-impact-reference-sheet/static/js/runtime-main.dd014056.js",
     "runtime-main.js.map": "/genshin-impact-reference-sheet/static/js/runtime-main.dd014056.js.map",
     "static/css/2.68f65abc.chunk.css": "/genshin-impact-reference-sheet/static/css/2.68f65abc.chunk.css",
@@ -52,6 +52,9 @@
     "static/media/Character_Jean_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Jean_Card.b727359b.png",
     "static/media/Character_Kaeya_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Kaeya_Avatar.1f6808cb.png",
     "static/media/Character_Kaeya_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Kaeya_Card.62b725d7.png",
+    "static/media/Character_Kazuha_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Kazuha_Avatar.a36b2d69.png",
+    "static/media/Character_Kazuha_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Kazuha_Card.ff1dc701.png",
+    "static/media/Character_Kazuha_Icon.png": "/genshin-impact-reference-sheet/static/media/Character_Kazuha_Icon.1c803112.png",
     "static/media/Character_Keqing_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Keqing_Avatar.c2b4f246.png",
     "static/media/Character_Keqing_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Keqing_Card.2d26612c.png",
     "static/media/Character_Klee_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Klee_Avatar.5346dac8.png",
@@ -112,10 +115,12 @@
     "static/media/Hoarfrost_Core.png": "/genshin-impact-reference-sheet/static/media/Hoarfrost_Core.979fa1c9.png",
     "static/media/Hurricane_Seed.png": "/genshin-impact-reference-sheet/static/media/Hurricane_Seed.8142f23f.png",
     "static/media/Hydro_Gemstone.png": "/genshin-impact-reference-sheet/static/media/Hydro_Gemstone.4b82dd22.png",
+    "static/media/Inazuma.png": "/genshin-impact-reference-sheet/static/media/Inazuma.56c9d5c8.png",
     "static/media/Jueyun_Chili.png": "/genshin-impact-reference-sheet/static/media/Jueyun_Chili.34d3d31e.png",
     "static/media/Juvenile_Jade.png": "/genshin-impact-reference-sheet/static/media/Juvenile_Jade.1d1c7f04.png",
     "static/media/Lightning_Prism.png": "/genshin-impact-reference-sheet/static/media/Lightning_Prism.e430fb2d.png",
     "static/media/Liyue.png": "/genshin-impact-reference-sheet/static/media/Liyue.6d9b6b14.png",
+    "static/media/Marionette_Core.png": "/genshin-impact-reference-sheet/static/media/Marionette_Core.9a7937e9.png",
     "static/media/Mask.png": "/genshin-impact-reference-sheet/static/media/Mask.f1570eba.png",
     "static/media/Mondstadt.png": "/genshin-impact-reference-sheet/static/media/Mondstadt.dc7336a5.png",
     "static/media/Nectar.png": "/genshin-impact-reference-sheet/static/media/Nectar.ed79ec9f.png",
@@ -127,6 +132,7 @@
     "static/media/Resistance.png": "/genshin-impact-reference-sheet/static/media/Resistance.97ac8c79.png",
     "static/media/Ring_of_Boreas.png": "/genshin-impact-reference-sheet/static/media/Ring_of_Boreas.cfafdbe6.png",
     "static/media/Scroll.png": "/genshin-impact-reference-sheet/static/media/Scroll.07c8df2e.png",
+    "static/media/Sea_Ganoderma.png": "/genshin-impact-reference-sheet/static/media/Sea_Ganoderma.5685b643.png",
     "static/media/Shadow_of_the_Warrior.png": "/genshin-impact-reference-sheet/static/media/Shadow_of_the_Warrior.73cfde35.png",
     "static/media/Shard_of_a_Foul_Legacy.png": "/genshin-impact-reference-sheet/static/media/Shard_of_a_Foul_Legacy.e4b47309.png",
     "static/media/Silk_Flower.png": "/genshin-impact-reference-sheet/static/media/Silk_Flower.19a23092.png",
@@ -148,6 +154,6 @@
     "static/css/2.68f65abc.chunk.css",
     "static/js/2.514b0df6.chunk.js",
     "static/css/main.db90ad27.chunk.css",
-    "static/js/main.bba5d151.chunk.js"
+    "static/js/main.7f8bc317.chunk.js"
   ]
 }
