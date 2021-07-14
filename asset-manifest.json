@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/genshin-impact-reference-sheet/static/css/main.db90ad27.chunk.css",
-    "main.js": "/genshin-impact-reference-sheet/static/js/main.fad31bf0.chunk.js",
-    "main.js.map": "/genshin-impact-reference-sheet/static/js/main.fad31bf0.chunk.js.map",
+    "main.js": "/genshin-impact-reference-sheet/static/js/main.12065a33.chunk.js",
+    "main.js.map": "/genshin-impact-reference-sheet/static/js/main.12065a33.chunk.js.map",
     "runtime-main.js": "/genshin-impact-reference-sheet/static/js/runtime-main.dd014056.js",
     "runtime-main.js.map": "/genshin-impact-reference-sheet/static/js/runtime-main.dd014056.js.map",
     "static/css/2.68f65abc.chunk.css": "/genshin-impact-reference-sheet/static/css/2.68f65abc.chunk.css",
@@ -42,10 +42,10 @@
     "static/media/Character_Eula_Icon.png": "/genshin-impact-reference-sheet/static/media/Character_Eula_Icon.813cb2d3.png",
     "static/media/Character_Fischl_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Fischl_Avatar.1e15258c.png",
     "static/media/Character_Fischl_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Fischl_Card.b7d8ada6.png",
-    "static/media/Character_Ganyu_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Ganyu_Avatar.293778fc.png",
+    "static/media/Character_Ganyu_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Ganyu_Avatar.8f7ec028.png",
     "static/media/Character_Ganyu_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Ganyu_Card.0254055d.png",
     "static/media/Character_Ganyu_Icon.png": "/genshin-impact-reference-sheet/static/media/Character_Ganyu_Icon.babfc5c8.png",
-    "static/media/Character_Hu_Tao_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Hu_Tao_Avatar.4b086351.png",
+    "static/media/Character_Hu_Tao_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Hu_Tao_Avatar.48242a19.png",
     "static/media/Character_Hu_Tao_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Hu_Tao_Card.63d4a9dd.png",
     "static/media/Character_Hu_Tao_Icon.png": "/genshin-impact-reference-sheet/static/media/Character_Hu_Tao_Icon.e503b077.png",
     "static/media/Character_Jean_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Jean_Avatar.ab27b884.png",
@@ -83,7 +83,7 @@
     "static/media/Character_Venti_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Venti_Card.745ad641.png",
     "static/media/Character_Xiangling_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Xiangling_Avatar.e66b544b.png",
     "static/media/Character_Xiangling_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Xiangling_Card.b783f265.png",
-    "static/media/Character_Xiao_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Xiao_Avatar.3612b816.png",
+    "static/media/Character_Xiao_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Xiao_Avatar.4fa212a8.png",
     "static/media/Character_Xiao_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Xiao_Card.16e7e1ac.png",
     "static/media/Character_Xingqiu_Avatar.png": "/genshin-impact-reference-sheet/static/media/Character_Xingqiu_Avatar.cd822e57.png",
     "static/media/Character_Xingqiu_Card.png": "/genshin-impact-reference-sheet/static/media/Character_Xingqiu_Card.ef4b2156.png",
@@ -154,6 +154,6 @@
     "static/css/2.68f65abc.chunk.css",
     "static/js/2.514b0df6.chunk.js",
     "static/css/main.db90ad27.chunk.css",
-    "static/js/main.fad31bf0.chunk.js"
+    "static/js/main.12065a33.chunk.js"
   ]
 }
